@@ -1,0 +1,200 @@
+% 这是一个将tikz图片转换成多张PNG的示例文件，使用pdftocairo来实现转换
+% 這是一個將tikz圖片轉換成多張PNG的示例文件，使用pdftocairo來實現轉換
+% This is a demo file for tikz to multiple PNGs using pdftocairo
+\documentclass[tikz, convert, convert={command=\unexpanded{pdftocairo -r 600 -png \infile\space}}]{standalone}
+\usepackage{xeCJK}
+\setCJKmainfont{Microsoft YaHei}
+% \setmainfont{Times New Roman}
+\usepackage{scalefnt}
+% \usepackage{lmodern}
+\usepackage{tikz}
+
+% 以下是关于tikz中画流程图的设置
+% 以下是關於tikz中畫流程圖的設置
+% configure flowchart shapes
+\usetikzlibrary{shapes.geometric, arrows, positioning, calc}
+
+% start, end shape
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm,
+minimum height=1cm,text centered,  text=white, draw=black,
+fill=colorStarstop]
+
+% process shape
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm,
+text centered, text=white, draw=black, fill=colorPro]
+
+% decision shape
+\tikzstyle{decision}=[diamond, minimum width=3cm, minimum height=1cm,
+text centered, draw=black , fill=colorDec]
+
+% comment shape
+\tikzstyle{comment}=[dashed, draw=black, fill=gray!10, minimum width=3cm, minimum height=1cm, text centered]
+
+% docstring shape
+\tikzstyle{docstring}=[draw=orange, fill=white, minimum width=50mm, text width=80mm, minimum height=1cm]
+
+% arrows shape
+\tikzstyle{arrow} = [ultra thick,->,>=stealth, line width=1.5mm]
+
+% comment shape
+\tikzstyle{comment}=[dashed, draw=black, fill=gray!10, minimum width=3cm, minimum height=1cm, text centered]
+
+
+
+\tikzset{
+    subprocess/.style = {rectangle, draw=black, semithick, fill=orange!30,
+        minimum width=#1, minimum height=1cm, inner xsep=3mm, % <-- changed
+        text width =\pgfkeysvalueof{/pgf/minimum width}-2*\pgfkeysvalueof{/pgf/inner xsep},
+        align=flush center,
+        path picture={\draw
+            ([xshift =2mm] \ppbb.north west) -- ([xshift= 2mm] \ppbb.south west)
+            ([xshift=-2mm] \ppbb.north east) -- ([xshift=-2mm] \ppbb.south east);
+        },
+    },
+    subprocess/.default = 24mm % <-- added
+}% end of tikzset
+
+\usetikzlibrary{positioning}
+
+% 以下是颜色的设置
+% 以下是顏色的設置
+% colour defs
+\usepackage{color}
+\definecolor{colorStarstop}{RGB}{174, 23, 21}
+\definecolor{colorPro}{RGB}{0, 175, 121}
+\definecolor{colorDec}{RGB}{255, 192, 0}
+\definecolor{colorYes}{RGB}{51, 153, 51}
+\definecolor{colorNo}{RGB}{255, 0, 0}
+
+\begin{document}
+
+    % 全局字体缩放
+    % 全局字體縮放
+    % global font scale
+    \scalefont{1.3}
+
+    % 第一张图
+    % 第一張圖
+    \begin{tikzpicture}[baseline=(current bounding box.north), scale=1.0, every node/.style={scale=1}]
+
+        \matrix[column sep=15mm, row sep=15mm]
+        {
+            % row 1
+            & \node (start)[startstop]{开始/開始}; &  \\
+
+            % row 2
+            & \node (p1)[process, text width=40mm]{流程1/流程1};
+            & \node (c1)[comment, text width=40mm]{注释1/註釋1};
+            & \\
+
+            % row 3
+            & \node (p2)[process, text width=40mm]{流程2/流程2};
+            & \node (c2)[comment, text width=40mm]{注释2/註釋2};
+            & \\
+
+            % row4
+            & \node (p3)[process, text width=40mm]{流程3/流程3};
+            & \node (c3)[comment, text width=40mm]{注释3/註釋3};
+            & \\
+
+            % row5
+            & \node (dec)[decision, text width=20mm]{判断/\\判斷};
+            & \\
+
+            % row 6
+            & \node (p4)[process, text width=40mm]{流程4/流程4};
+            & \node (c4)[comment, text width=40mm]{注释4/註釋4};
+            & \\
+
+            % row 7
+            & \node (end)[startstop]{结束/結束};
+            & \\
+        };
+
+        % lines and arrows
+        \draw[arrow](start) -- (p1);
+        \draw[arrow](p1) -- (p2);
+        \draw[arrow](p2) -- (p3);
+        \draw[arrow](p3) -- (dec);
+
+        \draw[arrow](p4) -- (end);
+
+        % 拐弯用/拐彎用
+        \coordinate[right of=p1, xshift=-50mm] (dummy1);
+        \draw[arrow, color=colorNo](dec)node[anchor=south east, xshift=-20mm]{非/非} -| (dummy1) -- (p1);
+
+        \draw[arrow, color=colorYes](dec)node[anchor=south west, xshift=-18mm, yshift=-25mm]{是/是} -- (p4);
+
+        % dashed line
+        \draw[dashed] (p1) -- (c1);
+        \draw[dashed] (p2) -- (c2);
+        \draw[dashed] (p3) -- (c3);
+        \draw[dashed] (p4) -- (c4);
+
+    \end{tikzpicture}
+
+    % 第二张图
+    % 第二張圖
+    \begin{tikzpicture}[baseline=(current bounding box.north), scale=1.0, every node/.style={scale=1.0}]
+
+        \matrix[column sep=15mm, row sep=15mm]
+        {
+            % row 1
+            & \node (start)[startstop]{开始/開始}; &  \\
+
+            % row 2
+            & \node (p1)[process, text width=40mm]{流程1/流程1};
+            & \node (c1)[comment, text width=40mm]{注释1/註釋1};
+            & \\
+
+            % row 3
+            & 
+            & \node (p2)[process, text width=40mm]{流程2/流程2};
+            & \\
+
+            % row4
+            & \node (c2)[comment, text width=40mm]{注释2/註釋2};
+            & \node (c3)[comment, text width=40mm]{注释3/註釋3};
+            & \node (p3)[process, text width=40mm]{流程3/流程3};
+            & \\
+
+            % row5
+            &
+            &
+            & \node (dec)[decision, text width=20mm]{判断/\\判斷};
+            & \\
+
+            % row 6
+            &
+            & \node (c4)[comment, text width=40mm]{注释4/註釋4};
+            & \node (p4)[process, text width=40mm]{流程4/流程4};
+            & \\
+
+            % row 7
+            &
+            &
+            & \node (end)[startstop]{结束/結束};
+            & \\};
+
+        % lines and arrows
+        \draw[arrow](start) -- (p1);
+        \draw[arrow](p1) |- (p2);
+        \draw[arrow](p2) -| (p3);
+        \draw[arrow](p3) -- (dec);
+
+        \draw[arrow](p4) -- (end);
+
+        % 拐弯用/拐彎用
+        \coordinate[right of=p1, xshift=-50mm] (dummy1);
+        \draw[arrow, color=colorNo](dec)node[anchor=south east, xshift=-20mm]{非/非} -| (dummy1) -- (p1);
+
+        \draw[arrow, color=colorYes](dec)node[anchor=south west, xshift=-18mm, yshift=-25mm]{是/是} -- (p4);
+
+        % dashed line
+        \draw[dashed] (p1) -- (c1);
+        \draw[dashed] (p2) -- (c2);
+        \draw[dashed] (p3) -- (c3);
+        \draw[dashed] (p4) -- (c4);
+
+    \end{tikzpicture}
+\end{document}
