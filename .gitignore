@@ -1,4 +1,9 @@
 *.png
-*.svg
 *.pdf
+*.log
 *.db
+*.gz
+*.aux
+*.eps
+*.svg
+*.emf

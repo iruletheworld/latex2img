@@ -1,0 +1,35 @@
+% 这是一个将tikz图片转换成多张PNG的示例文件，使用pdftocairo来实现转换
+% 這是一個將tikz圖片轉換成多張PNG的示例文件，使用pdftocairo來實現轉換
+% This is a demo file for tikz to multiple PNGs using pdftocairo
+\documentclass[tikz, convert, convert={command=\unexpanded{
+% 'out_png'是用来存放PNG的文件夹
+% 'out_png'是用來存放PNG的文件夾
+% 'out_png' is destination folder for PNG files
+call ./util/mk_folder out_png
+&& cd /d out_png
+&& call ../util/pdf_to_png.bat 600 ../\infile\space
+}}]{standalone}
+
+\usepackage{xeCJK}
+\setCJKmainfont{Microsoft YaHei}
+
+\usepackage{scalefnt}
+\usepackage{tikz}
+
+% tikz and colour configs
+\input{configs_tikz.tex}
+\input{configs_colour.tex}
+
+\begin{document}
+
+    % 全局字体缩放
+    % 全局字體縮放
+    % global font scale
+    \scalefont{1.3}
+
+    % tikz图像文档
+    % tikz圖像文檔
+    % tikz pics file
+    \input{tikz_pics.tex}
+
+\end{document}

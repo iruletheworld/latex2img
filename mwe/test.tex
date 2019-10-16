@@ -1,0 +1,13 @@
+\documentclass[varwidth=true, border=0pt, convert={command=\unexpanded{pdftocairo -r 600 -png \infile\space}}]{standalone}
+% \documentclass[multi, crop, varwidth, border=0pt, convert={command=\unexpanded{pdftocairo -r 600 -png \infile\space}}]{standalone}
+% \documentclass{article}
+\usepackage{xeCJK}
+\usepackage{zhlipsum}
+\usepackage{blindtext}
+\begin{document}
+    \blindtext
+
+    \newpage
+
+    \zhlipsum
+\end{document}

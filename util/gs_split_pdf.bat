@@ -1,2 +1,9 @@
-REM use ghost script (32-bit) to split a pdf into individual pages
-gswin32 -sDEVICE=pdfwrite -dSAFER -o .\pdf_split\demo_to_png_%%d.pdf demo_to_png.pdf
+@echo off
+REM use 64-bit ghosescript to split a pdf
+
+set temp_folder=%1
+set outfile=%2
+set infile=%3
+
+:: the gswinXXc.exe does not prompt the ghostscript window, the ones without the "c" do prompt
+gswin64c -sDEVICE=pdfwrite -dSAFER -dNOPAUSE -dBATCH -sOutputFile=%temp_folder%/%outfile% %infile%
