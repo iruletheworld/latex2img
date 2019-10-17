@@ -8,3 +8,4 @@
 *.svg
 *.emf
 .vscode/
+docs/source/_build
