@@ -9,3 +9,4 @@
 *.emf
 .vscode/
 docs/source/_build
+docs/build/
