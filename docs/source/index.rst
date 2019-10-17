@@ -16,7 +16,7 @@ Latex (tikz)轉換爲圖像
 * SVG （矢量圖）
 * PNG（位圖）
 * EMF （Windows系統上的矢量圖）
-* EPS （打印常用格式）
+* EPS （印刷常用格式）
 
 此項目的在於提供基於Windows系統的教程和例子。作者相信Linux用戶有能力獨自
 解決這個問題。
