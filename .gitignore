@@ -8,5 +8,7 @@
 *.svg
 *.emf
 .vscode/
-docs/source/_build
 docs/build/
+docs/Makefile
+docs/make.bat
+docs/source/_build/
