@@ -3,7 +3,8 @@
 
 軟件的下載鏈接可在 :doc:`system_and_software` 獲得。若鏈接失效，請自行搜索。
 
-* texlive的安裝過程比較長，請耐心等待。
+* texlive的安裝過程比較長，請耐心等待（根據網速而定，可能需要數十分鐘到
+  數小時不等）。
 
     * texlive自帶 :code:`standalone` 類和pdftocairo
 
@@ -14,7 +15,7 @@
   可。
 
 * 請保證所有軟件的路徑都加到系統環境變量"Path"中，否則Windows的CMD會無法
-  找到它們（除非用完整路徑）。此點會在:ref:`environ_path`詳述。
+  找到它們（除非用完整路徑）。此點會在 :ref:`environ_path` 詳述。
 
 
 .. _environ_path :

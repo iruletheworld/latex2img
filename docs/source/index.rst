@@ -25,6 +25,10 @@ Latex (tikz)轉換爲圖像
 
 此教程認爲用戶已經對Latex有一定的理解，因而不會對Latex中之各種進行詳解。
 
+本教程將會詳盡講解流程。若只想快速使用而不在乎原理，可先閱讀
+:doc:`/installation_and_configuration` 然後按照
+:doc:`/accelerated_guide` 中之步驟執行即可。
+
 .. toctree::
     :maxdepth: 3
     :numbered:
@@ -32,12 +36,9 @@ Latex (tikz)轉換爲圖像
 
     system_and_software
     installation_and_configuration
+    accelerated_guide
     config_standalone
     workflow
-    pdf_to_svg
-    pdf_to_png
-    pdf_to_emf
-    pdf_to_eps
     algorithm
 
 
