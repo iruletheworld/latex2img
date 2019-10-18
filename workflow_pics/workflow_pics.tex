@@ -1,7 +1,8 @@
 \documentclass[tikz, convert, convert={outext=.svg, command=\unexpanded{
 call ../util/mk_folder workflow_pics
 && cd /d workflow_pics
-&& call ../../util/pdf_to_svg ../\infile\space \outfile\space
+% && call ../../util/pdf_to_svg ../\infile\space \outfile\space
+&& call ../../util/pdf_to_png 600 ../\infile\space
 }}]{standalone}
 
 \usepackage{xeCJK}

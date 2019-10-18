@@ -3,8 +3,7 @@ Latex :code:`standalone` 包的配置
 
 本教程是基於由 `Martin Scharrer
 <https://bitbucket.org/martin_scharrer/standalone/src/default/>`_
-開發的 |standalone| 包（自帶
-:code:`standalone` 類），故此於此對此包稍作講解。
+開發的 |standalone| 包（自帶 :code:`standalone` 類），故此於此對此包稍作講解。
 
 .. |standalone| raw:: html
 
@@ -14,23 +13,17 @@ Latex :code:`standalone` 包的配置
 
 .. note:: :code:`standalone` (*complex*) [#]_
 
-    :code:`standalone` 是Latex中非常有用的一個包。本教程主要講述怎樣利用
-    此包來進行圖片的轉換，但此包其實還有其它相當多的應用。
-    `Overleaf
-    <https://www.overleaf.com/learn/latex/Multi-file_LaTeX_projects#The_standalone_package>`_
-    上有一個非常有用的教程。
+    :code:`standalone` 是Latex中非常有用的一個包。本教程主要講述怎樣利用此包來進行圖片的轉換，但此包其實還有其它相當多的應用。 `Overleaf
+    <https://www.overleaf.com/learn/latex/Multi-file_LaTeX_projects#The_standalone_package>`_ 上有一個非常有用的教程。
 
 .. [#] Ghost In Shell : Standalone Complex
 
 :code:`standalone` 的轉換命令配置
 ----------------------------------
 
-:code:`standalone` 本身的 `說明文檔 <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_
-已經對配置有詳盡的說明，此處重點說一下轉換成圖片需要用到的
-:code:`convert` 選項。
+:code:`standalone` 本身的 `說明文檔 <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_ 已經對配置有詳盡的說明，此處重點說一下轉換成圖片需要用到的 :code:`convert` 選項。
 
-配置 :code:`convert` 需要在 :code:`documentclass` 中進行。以下是一個利用
-:code:`pdf2svg` 轉換爲SVG的範例配置。
+配置 :code:`convert` 需要在 :code:`documentclass` 中進行。以下是一個利用 :code:`pdf2svg` 轉換爲SVG的範例配置。
 
 .. code-block:: latex
 
@@ -40,26 +33,25 @@ Latex :code:`standalone` 包的配置
 
 其中，
 
-:code:`tikz`
+* :code:`tikz`
     此選項告訴 :code:`standalone` Latex文檔中存在 :code:`tikz` 圖片。
 
-:code:`convert`
+* :code:`convert`
     此選項開啓 :code:`standalone` 的轉換功能。
 
-:code:`convert={}`
+* :code:`convert={}`
     此選項是 :code:`convert` 的詳細配置項。
 
-:code:`outext=.svg`
+* :code:`outext=.svg`
     設置輸出文件的後綴名爲".svg"。
 
     更詳細的說明請參看 :code:`standalone` 本身的 `說明文檔
-    <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_
-    中的表1。
+    <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_ 中的表1。
 
-:code:`command=\unexpanded{}`
+* :code:`command=\unexpanded{}`
     此項是將要調用系統運行的命令。
 
-:code:`pdf2svg`
+* :code:`pdf2svg`
     調用的轉換工具。
 
     .. note:: :code:`pdf2svg` 的語法
@@ -75,20 +67,16 @@ Latex :code:`standalone` 包的配置
 
         注意，尖括號中的內容需要替換爲所需的文件名。
 
-:code:`\infile`
+* :code:`\infile`
     輸入文件名，包含後綴名。默認後綴名爲".pdf"或".ps"。
 
-    更詳細的說明請參看 :code:`standalone` 本身的 `說明文檔
-    <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_
-    中的表1。
+   更詳細的說明請參看 :code:`standalone` 本身的 `說明文檔 <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_ 中的表1。
 
-:code:`\space`
-    空格。若不使用此參數，:code:`\infile` 後不會有空格，無論你實際上鍵入
-    了多少個。 :code:`\outfile` 也是這樣。
+* :code:`\space`
+    空格。若不使用此參數，:code:`\infile` 後不會有空格，無論你實際上鍵入了多少個。 :code:`\outfile` 也是這樣。
 
-:code:`\outfile`
-    輸出文件名，包含後綴名。默認後綴名爲".png"。此處已經通過
-    :code:`outext` 更改爲".svg"。
+* :code:`\outfile`
+    輸出文件名，包含後綴名。默認後綴名爲".png"。此處已經通過 :code:`outext` 更改爲".svg"。
 
     更詳細的說明請參看 :code:`standalone` 本身的 `說明文檔
     <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_

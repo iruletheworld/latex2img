@@ -88,16 +88,26 @@ latex_elements = {
     #
     'preamble': r'''
 
+    \usepackage{float}
+
     \usepackage{xeCJK}
-    \setCJKmainfont{Microsoft YaHei}
+    \setCJKmainfont{SourceHanSansCN-Medium}
+
+    \usepackage{graphicx}
+    \usepackage{svg}
+
+    \svgpath{{../../workflow_pics/workflow_pics}}
 
     ''',
+
+    # \setCJKmainfont{Microsoft YaHei}
+
 
     # 'fontpkg': '\\usepackage{lmodern}',
 
     # Latex figure (float) alignment
     #
-    # 'figure_align': 'htbp',
+    'figure_align': 'H',
 }
 
 latex_documents = [

@@ -19,10 +19,18 @@
 
 轉換爲SVG之流程可用如下之流程圖表示：
 
-.. thumbnail:: ../../workflow_pics/workflow_pics/workflow_pics-1.svg
-    :group: group1
-    :align: center
-    :alt: SVG flowchart
+.. only:: html
+
+    .. thumbnail:: ../../workflow_pics/workflow_pics/workflow_pics-1.svg
+        :group: group1
+        :align: center
+        :alt: SVG flowchart
+
+.. only:: latex
+
+    .. figure:: ../../workflow_pics/workflow_pics/workflow_pics-1.png
+        :align: center
+        :alt: SVG flowchart
 
 如上圖所示，轉換流程將在所在之目錄創建一個名爲 :code:`out_svg` 的文件夾單獨存放生成的SVG文件。之後將會調用 :code:`util` 文件夾中的 :code:`pdf_to_svg` 腳本來實現轉換。
 
@@ -65,10 +73,18 @@
 
 轉換爲PNG之流程可用如下之流程圖表示：
 
-.. thumbnail:: ../../workflow_pics/workflow_pics/workflow_pics-2.svg
-    :group: group1
-    :align: center
-    :alt: PNG flowchart
+.. only:: html
+
+    .. thumbnail:: ../../workflow_pics/workflow_pics/workflow_pics-2.svg
+        :group: group1
+        :align: center
+        :alt: PNG flowchart
+
+.. only:: latex
+
+    .. figure:: ../../workflow_pics/workflow_pics/workflow_pics-2.png
+        :align: center
+        :alt: PNG flowchart
 
 如上圖所示，轉換流程將在所在之目錄創建一個名爲 :code:`out_png` 的文件夾單獨存放生成的PNG文件。之後將會調用 :code:`util` 文件夾中的 :code:`pdf_to_png` 腳本來實現轉換。
 
@@ -99,10 +115,18 @@
 
 轉換爲EMF之流程可用如下之流程圖表示：
 
-.. thumbnail:: ../../workflow_pics/workflow_pics/workflow_pics-4.svg
-    :group: group1
-    :align: center
-    :alt: EMF flowchart
+.. only:: html
+
+    .. thumbnail:: ../../workflow_pics/workflow_pics/workflow_pics-4.svg
+        :group: group1
+        :align: center
+        :alt: EMF flowchart
+
+.. only:: latex
+
+    .. figure:: ../../workflow_pics/workflow_pics/workflow_pics-4.png
+        :align: center
+        :alt: EMF flowchart
 
 如上圖所示，轉換流程將在所在之目錄創建一個名爲 :code:`out_emf` 的文件夾單獨存放生成的EMF文件。之後將會調用 :code:`util` 文件夾中的 :code:`gs_split_pdf` 來對生成的PDF進行分頁，:code:`pdf_to_emf` 腳本來實現轉換。 轉換完畢後會刪除所有單頁之PDF，只保留EMF。
 
@@ -138,10 +162,18 @@
 
 轉換爲EPS之流程可用如下之流程圖表示：
 
-.. thumbnail:: ../../workflow_pics/workflow_pics/workflow_pics-3.svg
-    :group: group1
-    :align: center
-    :alt: EPS flowchart
+.. only:: html
+
+    .. thumbnail:: ../../workflow_pics/workflow_pics/workflow_pics-3.svg
+        :group: group1
+        :align: center
+        :alt: EPS flowchart
+
+.. only:: latex
+
+    .. figure:: ../../workflow_pics/workflow_pics/workflow_pics-3.png
+        :align: center
+        :alt: EPS flowchart
 
 如上圖所示，轉換流程將在所在之目錄創建一個名爲 :code:`out_eps` 的文件夾單獨存放生成的EMF文件。之後將會調用 :code:`util` 文件夾中的 :code:`gs_split_pdf` 來對生成的PDF進行分頁，:code:`pdf_to_eps` 腳本來實現轉換。 轉換完畢後會刪除所有單頁之PDF，只保留EMF。
 
