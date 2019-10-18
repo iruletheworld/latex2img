@@ -1,0 +1,130 @@
+% \section{转换为SVG之流程\\ 轉換爲SVG之流程\\ Workflow for Converting to SVG}
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=1.0, every node/.style={scale=1}]
+
+    \matrix[column sep=15mm, row sep=15mm]
+    {
+        % row 1
+        & \node
+        (start)[startstop]{$\overset{\overset{\text{Start SVG Conversion}}{\text{開始
+       轉換SVG}}}{\text{开始转换SVG}}$};
+        &  \\
+
+        % row 2
+        & \node (p1)[process, text
+        width=60mm]{$\overset{\overset{\text{Make folder "out\_svg" under
+        the root directory}}{\text{在根目錄下創建“out\_svg”文件
+        夾}}}{\text{在根目录下创建“out\_svg”文件夹}}$};
+        % & \node (p1)[process, text width=40mm]{$\overset{\overset{\text{Make folder out_svg under the root directory}}{\text{在根目錄下創建out_svg文件夾}}}{\text{在根目录下创建out_svg文件夹}}$};
+        % & \node (c1)[comment, text width=40mm]{注释1/註釋1};
+        & \\
+
+        % row 3
+        & \node (p2)[process, text width=40mm]{流程2/流程2};
+        & \node (c2)[comment, text width=40mm]{注释2/註釋2};
+        & \\
+
+        % row4
+        & \node (p3)[process, text width=40mm]{流程3/流程3};
+        & \node (c3)[comment, text width=40mm]{注释3/註釋3};
+        & \\
+
+        % row5
+        & \node (dec)[decision, text width=20mm]{判断/\\判斷};
+        & \\
+
+        % row 6
+        & \node (p4)[process, text width=40mm]{流程4/流程4};
+        & \node (c4)[comment, text width=40mm]{注释4/註釋4};
+        & \\
+
+        % row 7
+        & \node (end)[startstop]{结束/結束};
+        & \\
+    };
+
+    % lines and arrows
+    \draw[arrow](start) -- (p1);
+    \draw[arrow](p1) -- (p2);
+    \draw[arrow](p2) -- (p3);
+    \draw[arrow](p3) -- (dec);
+
+    \draw[arrow](p4) -- (end);
+
+    % 拐弯用/拐彎用
+    \coordinate[right of=p1, xshift=-50mm] (dummy1);
+    \draw[arrow, color=colorNo](dec)node[anchor=south east, xshift=-20mm]{非/非} -| (dummy1) -- (p1);
+
+    \draw[arrow, color=colorYes](dec)node[anchor=south west, xshift=-18mm, yshift=-25mm]{是/是} -- (p4);
+
+    % dashed line
+    % \draw[dashed] (p1) -- (c1);
+    % \draw[dashed] (p2) -- (c2);
+    % \draw[dashed] (p3) -- (c3);
+    % \draw[dashed] (p4) -- (c4);
+
+\end{tikzpicture}
+
+% 第二张图
+% 第二張圖
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=1.0, every node/.style={scale=1.0}]
+
+    \matrix[column sep=15mm, row sep=15mm]
+    {
+        % row 1
+        & \node (start)[startstop]{开始/開始}; &  \\
+
+        % row 2
+        & \node (p1)[process, text width=40mm]{流程1/流程1};
+        & \node (c1)[comment, text width=40mm]{注释1/註釋1};
+        & \\
+
+        % row 3
+        &
+        & \node (p2)[process, text width=40mm]{流程2/流程2};
+        & \\
+
+        % row4
+        & \node (c2)[comment, text width=40mm]{注释2/註釋2};
+        & \node (c3)[comment, text width=40mm]{注释3/註釋3};
+        & \node (p3)[process, text width=40mm]{流程3/流程3};
+        & \\
+
+        % row5
+        &
+        &
+        & \node (dec)[decision, text width=20mm]{判断/\\判斷};
+        & \\
+
+        % row 6
+        &
+        & \node (c4)[comment, text width=40mm]{注释4/註釋4};
+        & \node (p4)[process, text width=40mm]{流程4/流程4};
+        & \\
+
+        % row 7
+        &
+        &
+        & \node (end)[startstop]{结束/結束};
+        & \\};
+
+    % lines and arrows
+    \draw[arrow](start) -- (p1);
+    \draw[arrow](p1) |- (p2);
+    \draw[arrow](p2) -| (p3);
+    \draw[arrow](p3) -- (dec);
+
+    \draw[arrow](p4) -- (end);
+
+    % 拐弯用/拐彎用
+    \coordinate[right of=p1, xshift=-50mm] (dummy1);
+    \draw[arrow, color=colorNo](dec)node[anchor=south east, xshift=-20mm]{非/非} -| (dummy1) -- (p1);
+
+    \draw[arrow, color=colorYes](dec)node[anchor=south west, xshift=-18mm, yshift=-25mm]{是/是} -- (p4);
+
+    % dashed line
+    \draw[dashed] (p1) -- (c1);
+    \draw[dashed] (p2) -- (c2);
+    \draw[dashed] (p3) -- (c3);
+    \draw[dashed] (p4) -- (c4);
+
+\end{tikzpicture}

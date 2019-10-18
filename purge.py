@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-Purge everything but *.bat, *.tex, *.py, the .git dir, the .vscode dir,
+Purge everything but *.bat, *.tex, *.py, *.md, the .git dir, the .vscode dir,
 the docs dir.
 
 Also purge the empty folders.
@@ -27,7 +27,7 @@ __author__  = u'高斯羽 博士 (Dr. Gāo, Sī Yǔ)'
 __version__ = '1.0.1'
 __date__    = '2019-10-16'
 
-tup_ignore = ('.bat', '.tex', '.py', '.gitignore')
+tup_ignore = ('.bat', '.tex', '.py', '.gitignore', '.md')
 
 list_files = []
 

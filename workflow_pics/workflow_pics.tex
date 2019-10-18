@@ -1,0 +1,25 @@
+\documentclass[tikz, convert, convert={outext=.svg, command=\unexpanded{
+call ../util/mk_folder workflow_svg
+&& cd /d workflow_svg
+&& call ../../util/pdf_to_svg ../\infile\space \outfile\space
+}}]{standalone}
+
+\usepackage{xeCJK}
+\setCJKmainfont{Microsoft YaHei}
+
+\usepackage{scalefnt}
+\usepackage{tikz}
+
+\usepackage{amsmath}
+
+% tikz and colour configs
+\input{../configs_tikz.tex}
+\input{../configs_colour.tex}
+
+\begin{document}
+
+    \scalefont{1.0}
+
+    \input{tikz_workflow.tex}
+
+\end{document}
