@@ -1,0 +1,101 @@
+% 转换为EPS之流程\\ 轉換爲EPS之流程\\ Workflow for Converting to EPS
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=1.0, every node/.style={scale=1}]
+
+    \matrix[column sep=10mm, row sep=10mm]
+    {
+        % row 1
+        & \node
+        (start)[startstop]{$\overset{\overset{\text{Start EPS Conversion}}{\text{開始
+        轉換EPS}}}{\text{开始转换EPS}}$};
+        &  \\
+
+        % row 2
+        & \node (p1)[process, text
+        width=60mm]{$\overset{\overset{\text{Make folder "out\_eps" under
+        the root directory}}{\text{在根目錄下創建“out\_eps”文件
+        夾}}}{\text{在根目录下创建“out\_eps”文件夹}}$};
+        & \node(c1)[comment]{$\overset{\overset{\text{Will not create if
+        folder already exists}}{\text{若已存在，則不創建}}}{\text{若已存在，则不创建}}$};
+        & \\
+
+        % row 3
+        & \node (dec1)[decision, text
+        width=20mm]{$\overset{\overset{\text{Successful?}}{\text{成
+        功?}}}{\text{成功?}}$};
+        & \node (p2)[process, text
+        width=140mm]{$\overset{\overset{\text{\scalefont{0.8}Call the "gs\_split\_pdf"
+        script in the "util" directory to split the generated PFD into
+        single-page PDFs and put them into the "out\_eps"
+        folder}}{\text{\scalefont{0.8}調用“util”目錄中之“gs\_split\_pdf”腳本轉換成將生
+        成的PDF分割成單頁並導出到“out\_eps”文件夾中}}}{\text{\scalefont{0.8}调用“util”
+        目录中之“gs\_split\_pdf”脚本转换成将生成的PDF分割成单页并导出到
+        “out\_eps”文件夹中}}$};
+        & \\
+
+        % row 4
+        &
+        & \node (dec2)[decision, text
+        width=20mm]{$\overset{\overset{\text{Successful?}}{\text{成
+        功?}}}{\text{成功?}}$};
+        & \\
+
+        % row 5
+        &
+        & \node (p3)[process, text
+        width=40mm]{$\overset{\overset{\text{Enter the "out\_eps"
+        directory}}{\text{進入“out\_eps”目錄}}}{\text{进入“out\_eps”目
+        录}}$};
+        & \\
+
+        % row 6
+        &
+        & \node (dec3)[decision, text
+        width=20mm]{$\overset{\overset{\text{Successful?}}{\text{成
+        功?}}}{\text{成功?}}$};
+        & \node (p4)[process, text
+        width=90mm]{$\overset{\overset{\text{Call the "pdf\_to\_eps"
+        script in the "util" directory to convert to EPS}}{\text{調用“util”目錄中之“pdf\_to\_eps”腳本轉換成
+        EPS}}}{\text{调用“util”目录中之“pdf\_to\_eps” 脚本转换成EPS}}$};
+        & \\
+
+        % row 7
+        &
+        &
+        & \node (p5)[process, text
+        width=40mm]{$\overset{\overset{\text{Delete the single-page PDFs}}{\text{刪除單頁PDF}}}{\text{删除单页PDF}}$};
+        & \\
+
+        % row 8
+        &
+        &
+        & \node (end)[startstop]{$\overset{\overset{\text{End}}{\text{結束}}}{\text{结束}}$};
+        & \\
+    };
+
+    % 拐弯用/拐彎用
+    \coordinate[right of=dec2, xshift=-50mm] (dummy1);
+
+    % lines and arrows
+    \draw[arrow](start) -- (p1);
+    \draw[arrow](p1) -- (dec1);
+    \draw[arrow, color=colorYes](dec1)node[anchor=south east, xshift=25mm]{$\overset{\overset{\text{Yes}}{\text{是}}}{\text{是}}$} -- (p2);
+    \draw[arrow, color=colorNo](dec1)node[anchor=south east, yshift=-30mm]{$\overset{\overset{\text{No}}{\text{否}}}{\text{否}}$} |- (end);
+    \draw[arrow](p2) -- (dec2);
+    \draw[arrow, color=colorYes](dec2)node[anchor=north west,
+    xshift=2mm,
+    yshift=-13mm]{$\overset{\overset{\text{Yes}}{\text{是}}}{\text{是}}$} -- (p3);
+    \draw[arrow, color=colorNo](dec2)node[anchor=east,
+    xshift=-20mm, yshift=7mm]{$\overset{\overset{\text{No}}{\text{否}}}{\text{否}}$}
+    -- (dummy1) |- (end);
+    \draw[arrow](p3) -- (dec3);
+    \draw[arrow, color=colorYes](dec3)node[anchor=south east,
+    xshift=25mm]{$\overset{\overset{\text{Yes}}{\text{是}}}{\text{是}}$}
+    -- (p4);
+    \draw[arrow, color=colorNo](dec3)node[anchor=south east, yshift=-30mm]{$\overset{\overset{\text{No}}{\text{否}}}{\text{否}}$} |- (end);
+    \draw[arrow](p4) -- (p5);
+    \draw[arrow](p5) -- (end);
+
+    % % dashed line
+    \draw[dashed] (p1) -- (c1);
+
+\end{tikzpicture}

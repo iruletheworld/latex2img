@@ -1,6 +1,6 @@
 \documentclass[tikz, convert, convert={outext=.svg, command=\unexpanded{
-call ../util/mk_folder workflow_svg
-&& cd /d workflow_svg
+call ../util/mk_folder workflow_pics
+&& cd /d workflow_pics
 && call ../../util/pdf_to_svg ../\infile\space \outfile\space
 }}]{standalone}
 
@@ -20,6 +20,9 @@ call ../util/mk_folder workflow_svg
 
     \scalefont{1.0}
 
-    \input{tikz_workflow.tex}
+    \input{workflow_svg.tex}
+    \input{workflow_png.tex}
+    \input{workflow_eps.tex}
+    \input{workflow_emf.tex}
 
 \end{document}
