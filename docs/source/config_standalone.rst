@@ -101,18 +101,12 @@ SVG配置範例中之命令將會被翻譯爲如下（可以通過查看LOG文�
 
     pdf2svg mwe_to_svg.pdf mwe_to_svg-%01d.svg all
 
-由此可以看出，轉換的重點，是要把 :code:`convert={}` 中的配置正確設置，以
-令Latex將其翻譯成正確的系統命令來進行圖片的轉換。用戶可以把多個系統命令
-整合爲一行，以做出豐富多彩的組合來達成不同的目標（在Windows中可以通過"&"
-或"&&"把多行命令合併爲一行）。在 :doc:`workflow` 中將會詳細敘述各種圖片
-轉換的流程。
+由此可以看出，轉換的重點，是要把 :code:`convert={}` 中的配置正確設置，以令Latex將其翻譯成正確的系統命令來進行圖片的轉換。用戶可以把多個系統命令整合爲一行，以做出豐富多彩的組合來達成不同的目標（在Windows中可以通過"&"或"&&"把多行命令合併爲一行）。在 :doc:`workflow` 中將會詳細敘述各種圖片轉換的流程。
 
 編譯命令
 --------
 
-:code:`standalone` 需要在編譯時使用 :code:`-shell-escape` 參數。一個使用
-:code:`xelatex` 對 :code:`mew_to_svg.tex` 進行編譯的命令如下（用
-:code:`xelatex` 是因爲需要處理中文）。
+:code:`standalone` 需要在編譯時使用 :code:`-shell-escape` 參數。一個使用 :code:`xelatex` 對 :code:`mew_to_svg.tex` 進行編譯的命令如下（用 :code:`xelatex` 是因爲需要處理中文）。
 
 .. code-block:: bash
 

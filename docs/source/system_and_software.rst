@@ -35,7 +35,4 @@
 
 .. note::
 
-    儘管inkscape也可以進行PNG和SVG的轉換，但pdftocairo和pdf2svg自帶了多
-    頁到單頁的功能，使用便利，而且安裝也簡易，故而用此二軟件分別進行PNG
-    和SVG的轉換而不使用inkscape。若使用inkscape，則需要先調用ghostscript
-    對PDF進行分頁，然後再轉換。
+    儘管inkscape也可以進行PNG和SVG的轉換，但pdftocairo和pdf2svg自帶了多頁到單頁的功能，使用便利，而且安裝也簡易，故而用此二軟件分別進行PNG和SVG的轉換而不使用inkscape。若使用inkscape，則需要先調用ghostscript對PDF進行分頁，然後再轉換。
