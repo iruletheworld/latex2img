@@ -2,7 +2,7 @@
 
 '''
 Purge everything but *.bat, *.tex, *.py, *.md, the .git dir, the .vscode dir,
-the docs dir.
+the docs dir, the workflow_pics dir.
 
 Also purge the empty folders.
 
@@ -12,6 +12,9 @@ Change Log
 ----------------------
 
 * **Notable changes:**
+
+    + Version : 1.0.2
+        - Removed hardcoding of folders to ignore.
 
     + Version : 1.0.1
         - Also purge empty folders.
@@ -24,10 +27,12 @@ Change Log
 import os
 
 __author__  = u'高斯羽 博士 (Dr. Gāo, Sī Yǔ)'
-__version__ = '1.0.1'
-__date__    = '2019-10-16'
+__version__ = '1.0.2'
+__date__    = '2019-10-18'
 
-tup_ignore = ('.bat', '.tex', '.py', '.gitignore', '.md')
+tup_file_ignore = ('.bat', '.tex', '.py', '.gitignore', '.md')
+
+tup_dir_ignore = ('.git', '.vscode', 'docs', 'workflow_pics')
 
 list_files = []
 
@@ -38,11 +43,11 @@ for root, dirnames, filenames in os.walk(os.getcwd()):
 
         list_files.append(os.path.join(root, filename))
 
-list_files = [i for i in list_files if r'.git' not in i]
-list_files = [i for i in list_files if r'.vscode' not in i]
-list_files = [i for i in list_files if r'docs' not in i]
+for i in tup_dir_ignore:
 
-list_files = [i for i in list_files if not i.endswith(tup_ignore)]
+    list_files = [j for j in list_files if i not in j]
+
+list_files = [i for i in list_files if not i.endswith(tup_file_ignore)]
 
 for i in list_files:
 
@@ -67,9 +72,9 @@ for root, dirnames, filenames in os.walk(os.getcwd()):
 
         list_dirs.append(str_path_temp)
 
-list_dirs = [i for i in list_dirs if r'.git' not in i]
-list_dirs = [i for i in list_dirs if r'.vscode' not in i]
-list_dirs = [i for i in list_dirs if r'docs' not in i]
+for i in tup_dir_ignore:
+
+    list_dirs = [j for j in list_dirs if i not in j]
 
 for i in list_dirs:
 
