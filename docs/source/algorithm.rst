@@ -27,6 +27,14 @@
 * :code:`pdf_to_eps.bat`
     把PDF轉換爲的EPS（僅一頁）。
 
+.. warning:: 路徑
+
+    在設置 :code:`documentclass` 時，需要注意輸入的路徑參數。本教程一律使用相對路徑。
+
+    :code:`./` 是指當前所在路徑。
+
+    :code:`../` 是指往上移一層目錄。
+
 
 :code:`mk_folder.bat` 詳解
 ----------------------------
