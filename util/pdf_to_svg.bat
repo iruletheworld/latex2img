@@ -1,4 +1,4 @@
-@each off
+@echo off
 REM use pdf2svg (https://github.com/jalios/pdf2svg-windows) to convert a pdf to individual svgs
 
 set inputfile=%1
