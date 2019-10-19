@@ -35,11 +35,4 @@ Latex (tikz)轉換爲圖像
     config_standalone
     workflow
     algorithm
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+    in_one_go
