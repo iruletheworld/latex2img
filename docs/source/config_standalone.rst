@@ -16,8 +16,6 @@ Latex :code:`standalone` 包的配置
     :code:`standalone` 是Latex中非常有用的一個包。本教程主要講述怎樣利用此包來進行圖片的轉換，但此包其實還有其它相當多的應用。 `Overleaf
     <https://www.overleaf.com/learn/latex/Multi-file_LaTeX_projects#The_standalone_package>`_ 上有一個非常有用的教程。
 
-.. [#] Ghost In Shell : Standalone Complex
-
 :code:`standalone` 的轉換命令配置
 ----------------------------------
 
@@ -125,3 +123,6 @@ SVG配置範例中之命令將會被翻譯爲如下（可以通過查看LOG文�
 .. literalinclude:: ../../mwe/configs_colour.tex
     :linenos:
     :language: latex
+
+
+.. [#] Ghost In Shell : Standalone Complex
