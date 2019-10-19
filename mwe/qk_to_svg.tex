@@ -1,8 +1,5 @@
-% 这是一个将tikz图片转换成多张SVG的示例文件，使用pdf2svg来实现转换
-% 這是一個將tikz圖片轉換成多張SVG的示例文件，使用pdf2svg來實現轉換
-% This is a demo file for tikz to multiple SVGs using pdf2svg
 \documentclass[tikz, convert, convert={outext=.svg, command=\unexpanded{
-    pdf2svg \infile\space \outfile\space all
+call ../util/qk_pdf_to_svg out_svg \infile\space \outfile\space
 }}]{standalone}
 
 \usepackage{xeCJK}
@@ -11,8 +8,6 @@
 \usepackage{scalefnt}
 \usepackage{tikz}
 
-% tikz和colour的设定
-% tikz和colour的設定
 % tikz and colour configs
 \input{../configs_tikz.tex}
 \input{../configs_colour.tex}
