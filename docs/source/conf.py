@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = u'Latex (tikz)转换为图像/Latex (tikz)轉換爲圖像/Latex (tikz) to Images'
+project = u'LaTex (tikz)转换为图像/LaTex (tikz)轉換爲圖像/LaTex (tikz) to Images'
 copyright = u'2019, 高斯羽 博士 (Dr. Gāo, SīYǔ)'
 author = u'高斯羽 博士 (Dr. Gāo, SīYǔ)'
 
@@ -43,7 +43,7 @@ templates_path = ['_templates']
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'zh'
+language = 'zh_TW'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -53,7 +53,7 @@ exclude_patterns = []
 source_suffix = '.rst'
 # The master toctree document.
 master_doc = 'index'
-html_show_sourcelink = False
+# html_show_sourcelink = False
 pygments_style = 'sphinx'
 
 
@@ -91,7 +91,8 @@ latex_elements = {
     \usepackage{float}
 
     \usepackage{xeCJK}
-    \setCJKmainfont{SourceHanSansCN-Medium}
+    \setCJKmainfont{Source Han Serif TC}
+    \setCJKsansfont{Source Han Sans Bold Bold}
 
     \usepackage{graphicx}
     \usepackage{svg}
@@ -105,7 +106,7 @@ latex_elements = {
 
     # 'fontpkg': '\\usepackage{lmodern}',
 
-    # Latex figure (float) alignment
+    # LaTex figure (float) alignment
     #
     'figure_align': 'H',
 }
@@ -113,9 +114,9 @@ latex_elements = {
 latex_documents = [
     (master_doc,
      'late2img.tex',
-     (u'Latex (tikz)转换为图像' + r'\\'
-      + u'Latex (tikz)轉換爲圖像' + r'\\'
-      + u'Latex (tikz) to Images'),
+     (u'LaTex (tikz)转换为图像' + r'\\'
+      + u'LaTex (tikz)轉換爲圖像' + r'\\'
+      + u'LaTex (tikz) to Images'),
      u'高斯羽 博士 (Dr. Gāo, Sī Yǔ)', 'manual'),
 ]
 
@@ -124,6 +125,6 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'late2img', u'Latex (tikz) to Images Documentation',
+    (master_doc, 'late2img', u'LaTex (tikz) to Images Documentation',
      [author], 1)
 ]
