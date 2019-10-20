@@ -12,3 +12,5 @@ docs/build/
 docs/Makefile
 docs/make.bat
 docs/source/_build/
+!docs/source/_images/*.svg
+!docs/source/_images/*.png

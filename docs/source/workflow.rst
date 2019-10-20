@@ -22,14 +22,14 @@
 
 .. only:: html
 
-    .. thumbnail:: ../../workflow_pics/workflow_pics/workflow_pics-1.svg
+    .. thumbnail:: ./_images/workflow_pics-1.svg
         :group: group1
         :align: center
         :alt: SVG flowchart
 
 .. only:: latex
 
-    .. figure:: ../../workflow_pics/workflow_pics/workflow_pics-1.png
+    .. figure:: ./_images/workflow_pics-1.png
         :align: center
         :alt: SVG flowchart
 
@@ -76,14 +76,14 @@
 
 .. only:: html
 
-    .. thumbnail:: ../../workflow_pics/workflow_pics/workflow_pics-2.svg
+    .. thumbnail:: ./_images/workflow_pics-2.svg
         :group: group1
         :align: center
         :alt: PNG flowchart
 
 .. only:: latex
 
-    .. figure:: ../../workflow_pics/workflow_pics/workflow_pics-2.png
+    .. figure:: ./_images/workflow_pics-2.png
         :align: center
         :alt: PNG flowchart
 
@@ -118,14 +118,14 @@
 
 .. only:: html
 
-    .. thumbnail:: ../../workflow_pics/workflow_pics/workflow_pics-4.svg
+    .. thumbnail:: ./_images/workflow_pics-4.svg
         :group: group1
         :align: center
         :alt: EMF flowchart
 
 .. only:: latex
 
-    .. figure:: ../../workflow_pics/workflow_pics/workflow_pics-4.png
+    .. figure:: ./_images/workflow_pics-4.png
         :align: center
         :alt: EMF flowchart
 
@@ -165,14 +165,14 @@
 
 .. only:: html
 
-    .. thumbnail:: ../../workflow_pics/workflow_pics/workflow_pics-3.svg
+    .. thumbnail:: ./_images/workflow_pics-3.svg
         :group: group1
         :align: center
         :alt: EPS flowchart
 
 .. only:: latex
 
-    .. figure:: ../../workflow_pics/workflow_pics/workflow_pics-3.png
+    .. figure:: ./_images/workflow_pics-3.png
         :align: center
         :alt: EPS flowchart
 
