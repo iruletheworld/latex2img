@@ -83,7 +83,7 @@
 
 #. 輸出的單頁PDF的文件夾的路徑
 
-#. 輸出的單頁PDF文件的共用文件名加上 "%d"
+#. 輸出的單頁PDF文件的共用文件名加上“%d”
 
 #. 需要分頁的PDF的路徑
 
@@ -95,9 +95,9 @@
 
     gs_split_pdf output common%d.pdf pdf_in.pdf
 
-.. note:: "%d"
+.. note:: “%d”
 
-    如果不在共用文件名後加上 "%d"，:code:`ghostscript` 則不會對PDF進行分頁。
+    如果不在共用文件名後加上“%d”，:code:`ghostscript` 則不會對PDF進行分頁。
 
 
 :code:`pdf_to_svg.bat` 詳解
@@ -115,7 +115,7 @@
 
 #. 需要轉換的PDF文件路徑
 
-#. 輸出的單頁PDF文件的共用文件名加上 "%d"
+#. 輸出的單頁PDF文件的共用文件名加上“%d”
 
 此腳本調用 :code:`pdf2svg` 來進行文件的轉換。此處給出一個例子，需要轉換的PDF名爲 :code:`pdf_in`，輸出的單頁PDF的共用文件名爲 :code:`pdf_out` ，輸出的文件夾爲 :code:`out_svg` （已存在）。
 
@@ -123,9 +123,9 @@
 
     pdf_to_svg pdf_in.pdf .\out_svg\pdf_out%d.svg
 
-.. note:: "%d"
+.. note:: “%d”
 
-    如果不在共用文件名後加上 "%d"，則只會轉換PDF的第一頁。
+    如果不在共用文件名後加上“%d”，則只會轉換PDF的第一頁。
 
 
 :code:`pdf_to_png.bat` 詳解
@@ -141,7 +141,7 @@
 
 此腳本接受兩個參數。它們如下（按順序）：
 
-#. 轉換的PNG的DPI，一般爲300或600。過高的DPI會令轉換過程冗長。
+#. 轉換的PNG的DPI，一般爲300或600。過高的DPI會令轉換過程冗長。一般而言，打印需要至少300 DPI，一般600 DPI足以應付絕大部分情況。
 
 #. 需要轉換的PDF的路徑
 
@@ -149,8 +149,13 @@
 
 .. code-block:: windows
 
-    pdf_to_png 300 pdf_in.pdf
+    pdf_to_png 600 pdf_in.pdf
 
 .. note:: :code:`pdftocairo`
 
     :code:`pdftocairo` 會自動把多頁PDF轉換爲單頁的PNG，非常方便。
+
+
+.. note::
+
+    爲了方便，用戶可以把 :code:`util` 文件夾的路徑加入到系統環境變量 :code:`Path` 中，這樣就可以直接調用腳本，而不需要在命令中指定 :code:`util` 文件夾的路徑。

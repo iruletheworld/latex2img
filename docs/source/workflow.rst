@@ -1,13 +1,14 @@
 轉換流程
 ==========
 
-本章將對轉換流程進行講解。鑑於使用到之軟件，轉換成PNG的流程於轉換成SVG之流程相近，而轉換成EPS之流程則於轉換成EMF之流程同理。
+本章將對轉換流程進行講解。鑑於使用到之軟件，轉換成PNG的流程與轉換成SVG之流程相近，而轉換成EPS之流程則於轉換成EMF之流程同理。
 
-本教程中轉換的流程將利用到數份Windows的批處理腳本（在本教程的“util”文件夾中），本教程將在 :doc:`algorithm` 中對它們進行詳細講解。
+本教程中轉換的流程將利用到數份Windows的批處理腳本（在本教程的 :code:`util` 文件夾中），本教程將在 :doc:`algorithm` 中對它們進行詳細講解。
 
 本章中之方法一律需要使用 :code:`-shell-escape` 參數來進行編譯。一個使用 :code:`xelatex` 對 :code:`mew_to_svg.tex` 進行編譯的命令如下（用 :code:`xelatex` 是因爲需要處理中文）。
 
 .. code-block:: bash
+    :linenos:
 
     xelatex -synctex=1 -interaction=nonstopmode -shell-escape mwe_to_svg.tex
 
@@ -43,19 +44,19 @@
 
 .. note:: 設置 :code:`outext`
 
-    當 :code:`outext` 有設置時， :code:`standalone` 會自動地在輸出文件（即是 :code:`outfile`）的文件名（不含後綴名）後加上計數關鍵字（一般    是 :code:`%d`）。
+    當 :code:`outext` 有設置時， :code:`standalone` 會自動地在輸出文件（即是 :code:`outfile`）的文件名（不含後綴名）後加上計數關鍵字（一般是 :code:`%d`）。
 
     這小節的方法正是利用 :code:`standalone` 之此特性，結合 :code:`pdf2svg` 的語法來進行PDF轉換爲分頁的SVG。
 
-.. warning:: 關於 "%" 和 "\\" 符號
+.. warning:: 關於“%”和“\\”符號
 
-    在Latex中，"%" 是一個保留字，用來表示註釋。如果直接使用在 :code:`documentclass` 之中，則會把其後面的同行代碼全部註釋掉。這樣的話，編譯時會出問題。
+    在LaTex中，“%”是一個保留字，用來表示註釋。如果直接使用在 :code:`documentclass` 之中，則會把其後面的同行代碼全部註釋掉。這樣的話，編譯時會出問題。
 
-    然而，若用 "\\" 進行轉義（即 "escape"）的話 :code:`standalone` 是會把 "\\" 符號作爲明文加入到命令中的。這樣一來，命令通常都不對，因爲 "\\" 在Latex中是表示的是後面跟的是參數或者命令。而在Windows命令中 "%" 通常用來指代參數，在Windows中使用for循環時絕對會用到它，無法避免。
+    然而，若用 “\\” 進行轉義（即“escape”）的話 :code:`standalone` 是會把“\\”符號作爲明文加入到命令中的。這樣一來，命令通常都不對，因爲“\\”在LaTex中是表示的是後面跟的是參數或者命令。而在Windows命令中“%”通常用來指代參數，在Windows中使用for循環時絕對會用到它，無法避免。
 
-    綜上所述，如果在 :code:`documentcalss` 裏面直接把系統命令寫全的話，很難保證其正確性。
+    綜上所述，如果在 :code:`documentclass` 裏面直接把系統命令寫全的話，很難保證其正確性。
 
-    故此，作者選擇把命令封裝到多個批處理腳本中，這樣就可以避免以上提及的符號問題。
+    故此，作者選擇把命令封裝到多個批處理腳本中，這樣就可以避免以上提及的符號問題同時方便排錯。
 
 本方法用到以下兩份腳本：
 

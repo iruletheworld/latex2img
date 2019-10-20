@@ -17,7 +17,7 @@
 
 .. literalinclude:: ../../mwe/qk_to_svg.tex
     :language: latex
-    :lines: 1-3
+    :lines: 1-6
     :linenos:
 
 其中， :code:`out_svg` 是存放SVG的文件夾。
@@ -34,13 +34,13 @@
 一步轉換成PNG
 --------------
 
-本小結將使用 :code:`util` 文件夾中之 :code:`qk_pdf_to_png.bat` 腳本，以 :code:`mwe` 文件夾中的 :code:`qk_to_png.tex` 爲例，展示如何一步轉換到SVG。
+本小結將使用 :code:`util` 文件夾中之 :code:`qk_pdf_to_png.bat` 腳本，以 :code:`mwe` 文件夾中的 :code:`qk_to_png.tex` 爲例，展示如何一步轉換到PNG 。
 
 :code:`qk_to_png.tex` 中的 :code:`documentclass` 的配置如下：
 
 .. literalinclude:: ../../mwe/qk_to_png.tex
     :language: latex
-    :lines: 1-3
+    :lines: 1-6
     :linenos:
 
 其中， :code:`out_png` 是存放PNG的文件夾。
@@ -57,13 +57,13 @@
 一步轉換成EMF
 --------------
 
-本小結將使用 :code:`util` 文件夾中之 :code:`qk_pdf_to_emf.bat` 腳本，以 :code:`mwe` 文件夾中的 :code:`qk_to_emf.tex` 爲例，展示如何一步轉換到SVG。
+本小結將使用 :code:`util` 文件夾中之 :code:`qk_pdf_to_emf.bat` 腳本，以 :code:`mwe` 文件夾中的 :code:`qk_to_emf.tex` 爲例，展示如何一步轉換到EMF。
 
 :code:`qk_to_emf.tex` 中的 :code:`documentclass` 的配置如下：
 
 .. literalinclude:: ../../mwe/qk_to_emf.tex
     :language: latex
-    :lines: 1-3
+    :lines: 1-7
     :linenos:
 
 其中， :code:`out_emf` 是存放EMF的文件夾。
@@ -80,13 +80,13 @@
 一步轉換成EPS
 --------------
 
-本小結將使用 :code:`util` 文件夾中之 :code:`qk_pdf_to_eps.bat` 腳本，以 :code:`mwe` 文件夾中的 :code:`qk_to_eps.tex` 爲例，展示如何一步轉換到SVG。
+本小結將使用 :code:`util` 文件夾中之 :code:`qk_pdf_to_eps.bat` 腳本，以 :code:`mwe` 文件夾中的 :code:`qk_to_eps.tex` 爲例，展示如何一步轉換到EPS。
 
 :code:`qk_to_eps.tex` 中的 :code:`documentclass` 的配置如下：
 
 .. literalinclude:: ../../mwe/qk_to_eps.tex
     :language: latex
-    :lines: 1-3
+    :lines: 1-7
     :linenos:
 
 其中， :code:`out_eps` 是存放EPS的文件夾。
