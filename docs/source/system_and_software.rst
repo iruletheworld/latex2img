@@ -9,8 +9,8 @@
 * `texlive（2019年的發佈，免費） <https://www.tug.org/texlive/acquire-netinstall.html>`_
 * LaTex的 :code:`standalone` 包（ :code:`texlive` 自帶）
 *  :code:`pdftocairo` （ :code:`texlive` 自帶，用於PNG轉換）
-* `inksacpe（0.92.4，免費。用於EMF和EPS的轉換） <https://inkscape.org/release/inkscape-0.92.4/>`_
 * `pdf2svg（Windows編譯版，免費。用於SVG轉換） <https://github.com/jalios/pdf2svg-windows>`_
+* `inksacpe（0.92.4，免費。用於EMF和EPS的轉換） <https://inkscape.org/release/inkscape-0.92.4/>`_
 * `ghostscript (9.50，免費。用於PDF文件的分頁) <https://github.com/ArtifexSoftware/ghostpdl-downloads/releases>`_
 
 

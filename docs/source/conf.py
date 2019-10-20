@@ -75,6 +75,10 @@ html_static_path = ['_static']
 # -- Options for LaTeX output ------------------------------------------------
 latex_engine = 'xelatex'
 
+# latex_docclass = {
+#    'manual': 'ctexbook',
+# }
+
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
@@ -95,9 +99,9 @@ latex_elements = {
     \setCJKsansfont{Source Han Sans Bold Bold}
 
     \usepackage{graphicx}
-    \usepackage{svg}
 
-    \svgpath{{../../workflow_pics/workflow_pics}}
+    \usepackage{indentfirst}
+    \setlength{\parindent}{2em}
 
     ''',
 
@@ -113,11 +117,11 @@ latex_elements = {
 
 latex_documents = [
     (master_doc,
-     'late2img.tex',
+     'latex2img.tex',
      (u'LaTex (tikz)转换为图像' + r'\\'
       + u'LaTex (tikz)轉換爲圖像' + r'\\'
       + u'LaTex (tikz) to Images'),
-     u'高斯羽 博士 (Dr. Gāo, Sī Yǔ)', 'manual'),
+     u'高斯羽\ 博士 (Dr. Gāo, Sī Yǔ)', 'manual'),
 ]
 
 # -- Options for manual page output ------------------------------------------

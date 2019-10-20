@@ -42,10 +42,7 @@ LaTex :code:`standalone` 包的配置
     此選項是 :code:`convert` 的詳細配置項。
 
 * :code:`outext=.svg`
-    設置輸出文件的後綴名爲“.svg”。
-
-    更詳細的說明請參看 :code:`standalone` 本身的 `說明文檔
-    <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_ 中的表1。
+    設置輸出文件的後綴名爲“.svg”。更詳細的說明請參看 :code:`standalone` 本身的 `說明文檔 <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_ 中的表1。
 
 * :code:`command=\unexpanded{}`
     此項是將要調用系統運行的命令。
@@ -55,8 +52,7 @@ LaTex :code:`standalone` 包的配置
 
     .. note:: :code:`pdf2svg` 的語法
 
-        :code:`pdf2svg` 的語法可以參看 `這裏
-        <http://www.cityinthesky.co.uk/opensource/pdf2svg/>`_。
+        :code:`pdf2svg` 的語法可以參看 `這裏 <http://www.cityinthesky.co.uk/opensource/pdf2svg/>`_。
 
         其中，將一多頁PDF轉換爲分頁的多個SVG的語法爲：
 
@@ -67,19 +63,13 @@ LaTex :code:`standalone` 包的配置
         注意，尖括號，及其所包裹中的內容需要替換爲所需的文件名。
 
 * :code:`\infile`
-    輸入文件名，包含後綴名。默認後綴名爲“.pdf”或“.ps”。
-
-    更詳細的說明請參看 :code:`standalone` 本身的 `說明文檔 <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_ 中的表1。
+    輸入文件名，包含後綴名。默認後綴名爲“.pdf”或“.ps”。 更詳細的說明請參看 :code:`standalone` 本身的 `說明文檔 <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_ 中的表1。
 
 * :code:`\space`
     空格。若不使用此參數，:code:`\infile` 後不會有空格，無論你實際上鍵入了多少個。 :code:`\outfile` 也是這樣。
 
 * :code:`\outfile`
-    輸出文件名，包含後綴名。默認後綴名爲“.png”。此處已經通過 :code:`outext` 更改爲“.svg”。
-
-    更詳細的說明請參看 :code:`standalone` 本身的 `說明文檔
-    <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_
-    中的表1。
+    輸出文件名，包含後綴名。默認後綴名爲“.png”。此處已經通過 :code:`outext` 更改爲“.svg”。更詳細的說明請參看 :code:`standalone` 本身的 `說明文檔 <http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/standalone/standalone.pdf>`_ 中的表1。
 
 SVG配置範例中之命令將會被翻譯爲如下（可以通過查看LOG文件確認）。其中，
 :code:`mew_to_svg` 爲所用的TEX文件的文件名。
