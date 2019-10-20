@@ -92,6 +92,8 @@ latex_elements = {
     #
     'preamble': r'''
 
+    \usepackage[UTF8]{ctex}
+
     \usepackage{float}
 
     \usepackage{xeCJK}
