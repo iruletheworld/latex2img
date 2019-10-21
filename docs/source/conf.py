@@ -100,8 +100,8 @@ latex_elements = {
 
     \usepackage{xeCJK}
 
-    \setCJKmainfont{Songti TC}
-    % \setCJKmainfont{Source Han Serif TC}
+    %\setCJKmainfont{Songti TC}
+    \setCJKmainfont{Source Han Serif TC}
     % \setCJKsansfont{Source Han Sans Bold Bold}
 
     \usepackage{graphicx}
