@@ -7,9 +7,9 @@
 LaTex (tikz)轉換爲圖像
 ======================
 
-.. only:: latex
+.. raw:: latex
 
-    \newline
+    \vspace*{1cm}
 
 此項目是一個關於把LaTex文檔直接轉換爲各種圖像的教程（在編譯TEX文件時，同時生成單獨的圖片）。此教程主要關注如何把tikz生成的，內嵌於LaTex生成的PDF文件中的圖像轉換爲各種格式的單獨圖片。
 
