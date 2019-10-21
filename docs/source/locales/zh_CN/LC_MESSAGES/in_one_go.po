@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, 高斯羽 博士 (Dr. Gāo, SīYǔ)
+# This file is distributed under the same license as the LaTex
+# (tikz)转换为图像/LaTex (tikz)轉換爲圖像/LaTex (tikz) to Images package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LaTex (tikz)转换为图像/LaTex (tikz)轉換爲圖像/LaTex (tikz) to "
+"Images \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-21 00:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../in_one_go.rst:2
+msgid "一步到位"
+msgstr "一步到位"
+
+#: ../../in_one_go.rst:4
+msgid "本章在 :doc:`algorithm` 的基礎上，講解怎樣把命令合併到一個腳本中從而簡化 :code:`documentclass` 的配置。"
+msgstr "本章在 :doc:`algorithm` 的基础上，讲解怎样把命令合并到一个脚本中从而简化 :code:`documentclass` 的配置。"
+
+#: ../../in_one_go.rst:6
+msgid ""
+"從 :doc:`algorithm` "
+"中可以看出，本教程爲了方便排錯，而把命令分到多個腳本之中，逐個擊破，但其實完全是可以把命令全部寫入單個腳本之中，而實現簡化 "
+":code:`documentclass` 的設置的。"
+msgstr ""
+"从 :doc:`algorithm` "
+"中可以看出，本教程为了方便排错，而把命令分到多个脚本之中，逐个击破，但其实完全是可以把命令全部写入单个脚本之中，而实现简化 "
+":code:`documentclass` 的设置的。"
+
+#: ../../in_one_go.rst:8
+msgid "本章將會提供這麼做的範例。"
+msgstr "本章将会提供这么做的范例。"
+
+#: ../../in_one_go.rst:12
+msgid "一步轉換成SVG"
+msgstr "一步转换成SVG"
+
+#: ../../in_one_go.rst:14
+msgid ""
+"本小結將使用 :code:`util` 文件夾中之 :code:`qk_pdf_to_svg.bat` 腳本，以 :code:`mwe` "
+"文件夾中的 :code:`qk_to_svg.tex` 爲例，展示如何一步轉換到SVG。"
+msgstr ""
+"本小结将使用 :code:`util` 文件夹中之 :code:`qk_pdf_to_svg.bat` 脚本，以 :code:`mwe` "
+"文件夹中的 :code:`qk_to_svg.tex` 为例，展示如何一步转换到SVG。"
+
+#: ../../in_one_go.rst:16
+msgid ":code:`qk_to_svg.tex` 中的 :code:`documentclass` 的配置如下："
+msgstr ":code:`qk_to_svg.tex` 中的 :code:`documentclass` 的配置如下："
+
+#: ../../in_one_go.rst:23
+msgid "其中， :code:`out_svg` 是存放SVG的文件夾。"
+msgstr "其中， :code:`out_svg` 是存放SVG的文件夹。"
+
+#: ../../in_one_go.rst:25
+msgid ":code:`qk_pdf_svg.bat` 腳本的內容如下："
+msgstr ":code:`qk_pdf_svg.bat` 脚本的内容如下："
+
+#: ../../in_one_go.rst:31
+msgid ""
+":code:`qk_pdf_to_svg.bat` 中的命令，是把 :code:`demo_to_svg.tex` 中的 "
+":code:`documentclass` 中的命令整合爲一，以達到簡化 :code:`documentclass` 的配置的目的。"
+msgstr ""
+":code:`qk_pdf_to_svg.bat` 中的命令，是把 :code:`demo_to_svg.tex` 中的 "
+":code:`documentclass` 中的命令整合为一，以达到简化 :code:`documentclass` 的配置的目的。"
+
+#: ../../in_one_go.rst:35
+msgid "一步轉換成PNG"
+msgstr "一步转换成PNG"
+
+#: ../../in_one_go.rst:37
+msgid ""
+"本小結將使用 :code:`util` 文件夾中之 :code:`qk_pdf_to_png.bat` 腳本，以 :code:`mwe` "
+"文件夾中的 :code:`qk_to_png.tex` 爲例，展示如何一步轉換到PNG 。"
+msgstr ""
+"本小结将使用 :code:`util` 文件夹中之 :code:`qk_pdf_to_png.bat` 脚本，以 :code:`mwe` "
+"文件夹中的 :code:`qk_to_png.tex` 为例，展示如何一步转换到PNG 。"
+
+#: ../../in_one_go.rst:39
+msgid ":code:`qk_to_png.tex` 中的 :code:`documentclass` 的配置如下："
+msgstr ":code:`qk_to_png.tex` 中的 :code:`documentclass` 的配置如下："
+
+#: ../../in_one_go.rst:46
+msgid "其中， :code:`out_png` 是存放PNG的文件夾。"
+msgstr "其中， :code:`out_png` 是存放PNG的文件夹。"
+
+#: ../../in_one_go.rst:48
+msgid ":code:`qk_pdf_to_png.bat` 腳本的內容如下："
+msgstr ":code:`qk_pdf_to_png.bat` 脚本的内容如下："
+
+#: ../../in_one_go.rst:54
+msgid ""
+":code:`qk_pdf_to_png.bat` 中的命令，是把 :code:`demo_to_png.tex` 中的 "
+":code:`documentclass` 中的命令整合爲一，以達到簡化 :code:`documentclass` 的配置的目的。"
+msgstr ""
+":code:`qk_pdf_to_png.bat` 中的命令，是把 :code:`demo_to_png.tex` 中的 "
+":code:`documentclass` 中的命令整合为一，以达到简化 :code:`documentclass` 的配置的目的。"
+
+#: ../../in_one_go.rst:58
+msgid "一步轉換成EMF"
+msgstr "一步转换成EMF"
+
+#: ../../in_one_go.rst:60
+msgid ""
+"本小結將使用 :code:`util` 文件夾中之 :code:`qk_pdf_to_emf.bat` 腳本，以 :code:`mwe` "
+"文件夾中的 :code:`qk_to_emf.tex` 爲例，展示如何一步轉換到EMF。"
+msgstr ""
+"本小结将使用 :code:`util` 文件夹中之 :code:`qk_pdf_to_emf.bat` 脚本，以 :code:`mwe` "
+"文件夹中的 :code:`qk_to_emf.tex` 为例，展示如何一步转换到EMF。"
+
+#: ../../in_one_go.rst:62
+msgid ":code:`qk_to_emf.tex` 中的 :code:`documentclass` 的配置如下："
+msgstr ":code:`qk_to_emf.tex` 中的 :code:`documentclass` 的配置如下："
+
+#: ../../in_one_go.rst:69
+msgid "其中， :code:`out_emf` 是存放EMF的文件夾。"
+msgstr "其中， :code:`out_emf` 是存放EMF的文件夹。"
+
+#: ../../in_one_go.rst:71
+msgid ":code:`qk_pdf_to_emf.bat` 腳本的內容如下："
+msgstr ":code:`qk_pdf_to_emf.bat` 脚本的内容如下："
+
+#: ../../in_one_go.rst:77
+msgid ""
+":code:`qk_pdf_to_emf.bat` 中的命令，是把 :code:`demo_to_emf.tex` 中的 "
+":code:`documentclass` 中的命令整合爲一，以達到簡化 :code:`documentclass` 的配置的目的。"
+msgstr ""
+":code:`qk_pdf_to_emf.bat` 中的命令，是把 :code:`demo_to_emf.tex` 中的 "
+":code:`documentclass` 中的命令整合为一，以达到简化 :code:`documentclass` 的配置的目的。"
+
+#: ../../in_one_go.rst:81
+msgid "一步轉換成EPS"
+msgstr "一步转换成EPS"
+
+#: ../../in_one_go.rst:83
+msgid ""
+"本小結將使用 :code:`util` 文件夾中之 :code:`qk_pdf_to_eps.bat` 腳本，以 :code:`mwe` "
+"文件夾中的 :code:`qk_to_eps.tex` 爲例，展示如何一步轉換到EPS。"
+msgstr ""
+"本小结将使用 :code:`util` 文件夹中之 :code:`qk_pdf_to_eps.bat` 脚本，以 :code:`mwe` "
+"文件夹中的 :code:`qk_to_eps.tex` 为例，展示如何一步转换到EPS。"
+
+#: ../../in_one_go.rst:85
+msgid ":code:`qk_to_eps.tex` 中的 :code:`documentclass` 的配置如下："
+msgstr ":code:`qk_to_eps.tex` 中的 :code:`documentclass` 的配置如下："
+
+#: ../../in_one_go.rst:92
+msgid "其中， :code:`out_eps` 是存放EPS的文件夾。"
+msgstr "其中， :code:`out_eps` 是存放EPS的文件夹。"
+
+#: ../../in_one_go.rst:94
+msgid ":code:`qk_pdf_to_eps.bat` 腳本的內容如下："
+msgstr ":code:`qk_pdf_to_eps.bat` 脚本的内容如下："
+
+#: ../../in_one_go.rst:100
+msgid ""
+":code:`qk_pdf_to_eps.bat` 中的命令，是把 :code:`demo_to_eps.tex` 中的 "
+":code:`documentclass` 中的命令整合爲一，以達到簡化 :code:`documentclass` 的配置的目的。"
+msgstr ""
+":code:`qk_pdf_to_eps.bat` 中的命令，是把 :code:`demo_to_eps.tex` 中的 "
+":code:`documentclass` 中的命令整合为一，以达到简化 :code:`documentclass` 的配置的目的。"

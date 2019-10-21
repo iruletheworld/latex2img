@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, 高斯羽 博士 (Dr. Gāo, SīYǔ)
+# This file is distributed under the same license as the LaTex
+# (tikz)转换为图像/LaTex (tikz)轉換爲圖像/LaTex (tikz) to Images package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LaTex (tikz)转换为图像/LaTex (tikz)轉換爲圖像/LaTex (tikz) to "
+"Images \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-21 00:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../system_and_software.rst:4
+msgid "系統和軟件"
+msgstr "系统和软件"
+
+#: ../../system_and_software.rst:6
+msgid "此項目會用到如下的系統和軟件，請先保證你已安裝了它們。"
+msgstr "此项目会用到如下的系统和软件，请先保证你已安装了它们。"
+
+#: ../../system_and_software.rst:8
+msgid "Windows 7或Windows 10"
+msgstr "Windows 7或Windows 10"
+
+#: ../../system_and_software.rst:9
+msgid ""
+"`texlive（2019年的發佈，免費） <https://www.tug.org/texlive/acquire-"
+"netinstall.html>`_"
+msgstr ""
+"`texlive（2019年的发布，免费） <https://www.tug.org/texlive/acquire-"
+"netinstall.html>`_"
+
+#: ../../system_and_software.rst:10
+msgid "LaTex的 :code:`standalone` 包（ :code:`texlive` 自帶）"
+msgstr "LaTex的 :code:`standalone` 包（ :code:`texlive` 自带）"
+
+#: ../../system_and_software.rst:11
+msgid ":code:`pdftocairo` （ :code:`texlive` 自帶，用於PNG轉換）"
+msgstr ":code:`pdftocairo` （ :code:`texlive` 自带，用于PNG转换）"
+
+#: ../../system_and_software.rst:12
+msgid ""
+"`pdf2svg（Windows編譯版，免費。用於SVG轉換） <https://github.com/jalios/pdf2svg-"
+"windows>`_"
+msgstr ""
+"`pdf2svg（Windows编译版，免费。用于SVG转换） <https://github.com/jalios/pdf2svg-"
+"windows>`_"
+
+#: ../../system_and_software.rst:13
+msgid ""
+"`inksacpe（0.92.4，免費。用於EMF和EPS的轉換） "
+"<https://inkscape.org/release/inkscape-0.92.4/>`_"
+msgstr ""
+"`inksacpe（0.92.4，免费。用于EMF和EPS的转换） "
+"<https://inkscape.org/release/inkscape-0.92.4/>`_"
+
+#: ../../system_and_software.rst:14
+msgid ""
+"`ghostscript (9.50，免費。用於PDF文件的分頁) <https://github.com/ArtifexSoftware"
+"/ghostpdl-downloads/releases>`_"
+msgstr ""
+"`ghostscript (9.50，免费。用于PDF文件的分页) <https://github.com/ArtifexSoftware"
+"/ghostpdl-downloads/releases>`_"
+
+#: ../../system_and_software.rst:18
+msgid "轉換軟件的使用理由"
+msgstr "转换软件的使用理由"
+
+#: ../../system_and_software.rst:20
+msgid "此項目選擇的轉換軟件主要基於以下理由。"
+msgstr "此项目选择的转换软件主要基于以下理由。"
+
+#: ../../system_and_software.rst:22
+msgid "此項目堅持所有使用的轉換軟件必須爲免費"
+msgstr "此项目坚持所有使用的转换软件必须为免费"
+
+#: ../../system_and_software.rst:24
+msgid "轉換結果必須是一頁PDF一張圖"
+msgstr "转换结果必须是一页PDF一张图"
+
+#: ../../system_and_software.rst:26
+msgid "當把PDF轉換爲矢量圖時，必須爲真正的矢量圖，而不是包裹在矢量格式中的位圖"
+msgstr "当把PDF转换为矢量图时，必须为真正的矢量图，而不是包裹在矢量格式中的位图"
+
+#: ../../system_and_software.rst:28
+msgid "因此，此項目不使用ImageMagick，因其在轉換矢量圖時經常柵格化"
+msgstr "因此，此项目不使用ImageMagick，因其在转换矢量图时经常栅格化"
+
+#: ../../system_and_software.rst:30
+msgid "當轉爲爲矢量圖時，字體應該嵌入而不是柵格化"
+msgstr "当转为为矢量图时，字体应该嵌入而不是栅格化"
+
+#: ../../system_and_software.rst:32
+msgid "轉換命令應儘可能簡單"
+msgstr "转换命令应尽可能简单"
+
+#: ../../system_and_software.rst:34
+msgid "使用的軟件儘可能少以降低依賴性"
+msgstr "使用的软件尽可能少以降低依赖性"
+
+#: ../../system_and_software.rst:38
+msgid ""
+"儘管 :code:`inkscape` 也可以進行PNG和SVG的轉換，但 :code:`pdftocairo` 和 "
+":code:`pdf2svg` 自帶了多頁到單頁的功能，使用便利，而且安裝也簡易，故而用此二軟件分別進行PNG和SVG的轉換而不使用 "
+":code:`inkscape` 。若使用 :code:`inkscape` ，則需要先調用 :code:`ghostscript` "
+"對PDF進行分頁，然後再轉換。"
+msgstr ""
+"尽管 :code:`inkscape` 也可以进行PNG和SVG的转换，但 :code:`pdftocairo` 和 "
+":code:`pdf2svg` 自带了多页到单页的功能，使用便利，而且安装也简易，故而用此二软件分别进行PNG和SVG的转换而不使用 "
+":code:`inkscape` 。若使用 :code:`inkscape` ，则需要先调用 :code:`ghostscript` "
+"对PDF进行分页，然后再转换。"

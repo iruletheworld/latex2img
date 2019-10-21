@@ -1,0 +1,266 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, 高斯羽 博士 (Dr. Gāo, SīYǔ)
+# This file is distributed under the same license as the LaTex
+# (tikz)转换为图像/LaTex (tikz)轉換爲圖像/LaTex (tikz) to Images package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LaTex (tikz)转换为图像/LaTex (tikz)轉換爲圖像/LaTex (tikz) to "
+"Images \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-21 00:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../workflow.rst:2
+msgid "轉換流程"
+msgstr "转换流程"
+
+#: ../../workflow.rst:4
+msgid "本章將對轉換流程進行講解。鑑於使用到之軟件，轉換成PNG的流程與轉換成SVG之流程相近，而轉換成EPS之流程則於轉換成EMF之流程同理。"
+msgstr "本章将对转换流程进行讲解。鉴于使用到之软件，转换成PNG的流程与转换成SVG之流程相近，而转换成EPS之流程则于转换成EMF之流程同理。"
+
+#: ../../workflow.rst:6
+msgid ""
+"本教程中轉換的流程將利用到數份Windows的批處理腳本（在本教程的 :code:`util` 文件夾中），本教程將在 "
+":doc:`algorithm` 中對它們進行詳細講解。"
+msgstr ""
+"本教程中转换的流程将利用到数份Windows的批处理脚本（在本教程的 :code:`util` 文件夹中），本教程将在 "
+":doc:`algorithm` 中对它们进行详细讲解。"
+
+#: ../../workflow.rst:8
+msgid ""
+"本章中之方法一律需要使用 :code:`-shell-escape` 參數來進行編譯。一個使用 :code:`xelatex` 對 "
+":code:`mew_to_svg.tex` 進行編譯的命令如下（用 :code:`xelatex` 是因爲需要處理中文）。"
+msgstr ""
+"本章中之方法一律需要使用 :code:`-shell-escape` 参数来进行编译。一个使用 :code:`xelatex` 对 "
+":code:`mew_to_svg.tex` 进行编译的命令如下（用 :code:`xelatex` 是因为需要处理中文）。"
+
+#: ../../workflow.rst:15
+msgid "請把 :code:`mwe_to_svg` 替換爲你的TEX文件文件名。"
+msgstr "请把 :code:`mwe_to_svg` 替换为你的TEX文件文件名。"
+
+#: ../../workflow.rst:19
+msgid "轉換爲SVG之流程"
+msgstr "转换为SVG之流程"
+
+#: ../../workflow.rst:21
+msgid "轉換爲SVG之流程可用如下之流程圖表示："
+msgstr "转换为SVG之流程可用如下之流程图表示："
+
+#: ../../workflow.rst:36
+msgid ""
+"如上圖所示，轉換流程將在所在之目錄創建一個名爲 :code:`out_svg` 的文件夾單獨存放生成的SVG文件。之後將會調用 "
+":code:`util` 文件夾中的 :code:`pdf_to_svg` 腳本來實現轉換。"
+msgstr ""
+"如上图所示，转换流程将在所在之目录创建一个名为 :code:`out_svg` 的文件夹单独存放生成的SVG文件。之后将会调用 "
+":code:`util` 文件夹中的 :code:`pdf_to_svg` 脚本来实现转换。"
+
+#: ../../workflow.rst:38 ../../workflow.rst:92 ../../workflow.rst:134
+#: ../../workflow.rst:181
+msgid "此流程需要用戶對需要轉換之TEX文件的 :code:`documentclass` 進行如下配置："
+msgstr "此流程需要用户对需要转换之TEX文件的 :code:`documentclass` 进行如下配置："
+
+#: ../../workflow.rst:45
+msgid "設置 :code:`outext`"
+msgstr "设置 :code:`outext`"
+
+#: ../../workflow.rst:47
+#, python-format
+msgid ""
+"當 :code:`outext` 有設置時， :code:`standalone` 會自動地在輸出文件（即是 "
+":code:`outfile`）的文件名（不含後綴名）後加上計數關鍵字（一般是 :code:`%d`）。"
+msgstr ""
+"当 :code:`outext` 有设置时， :code:`standalone` 会自动地在输出文件（即是 "
+":code:`outfile`）的文件名（不含后缀名）后加上计数关键字（一般是 :code:`%d`）。"
+
+#: ../../workflow.rst:49
+msgid "這小節的方法正是利用 :code:`standalone` 之此特性，結合 :code:`pdf2svg` 的語法來進行PDF轉換爲分頁的SVG。"
+msgstr "这小节的方法正是利用 :code:`standalone` 之此特性，结合 :code:`pdf2svg` 的语法来进行PDF转换为分页的SVG。"
+
+#: ../../workflow.rst:51
+msgid "關於“%”和“\\\\”符號"
+msgstr "关于“%”和“\\\\”符号"
+
+#: ../../workflow.rst:53
+msgid ""
+"在LaTex中，“%”是一個保留字，用來表示註釋。如果直接使用在 :code:`documentclass` "
+"之中，則會把其後面的同行代碼全部註釋掉。這樣的話，編譯時會出問題。"
+msgstr ""
+"在LaTex中，“%”是一个保留字，用来表示注释。如果直接使用在 :code:`documentclass` "
+"之中，则会把其后面的同行代码全部注释掉。这样的话，编译时会出问题。"
+
+#: ../../workflow.rst:55
+msgid ""
+"然而，若用 “\\\\” 進行轉義（即“escape”）的話 :code:`standalone` "
+"是會把“\\\\”符號作爲明文加入到命令中的。這樣一來，命令通常都不對，因爲“\\\\”在LaTex中是表示的是後面跟的是參數或者命令。而在Windows命令中“%”通常用來指代參數，在Windows中使用for循環時絕對會用到它，無法避免。"
+msgstr ""
+"然而，若用 “\\\\” 进行转义（即“escape”）的话 :code:`standalone` "
+"是会把“\\\\”符号作为明文加入到命令中的。这样一来，命令通常都不对，因为“\\\\”在LaTex中是表示的是后面跟的是参数或者命令。而在Windows命令中“%”通常用来指代参数，在Windows中使用for循环时绝对会用到它，无法避免。"
+
+#: ../../workflow.rst:57
+msgid "綜上所述，如果在 :code:`documentclass` 裏面直接把系統命令寫全的話，很難保證其正確性。"
+msgstr "综上所述，如果在 :code:`documentclass` 里面直接把系统命令写全的话，很难保证其正确性。"
+
+#: ../../workflow.rst:59
+msgid "故此，作者選擇把命令封裝到多個批處理腳本中，這樣就可以避免以上提及的符號問題同時方便排錯。"
+msgstr "故此，作者选择把命令封装到多个批处理脚本中，这样就可以避免以上提及的符号问题同时方便排错。"
+
+#: ../../workflow.rst:61 ../../workflow.rst:103
+msgid "本方法用到以下兩份腳本："
+msgstr "本方法用到以下两份脚本："
+
+#: ../../workflow.rst:64 ../../workflow.rst:106 ../../workflow.rst:150
+#: ../../workflow.rst:193
+msgid ":code:`mk_folder`"
+msgstr ":code:`mk_folder`"
+
+#: ../../workflow.rst:64 ../../workflow.rst:106 ../../workflow.rst:150
+#: ../../workflow.rst:193
+msgid "創建文件夾。"
+msgstr "创建文件夹。"
+
+#: ../../workflow.rst:67
+msgid ":code:`pdf_to_svg`"
+msgstr ":code:`pdf_to_svg`"
+
+#: ../../workflow.rst:67
+msgid "將多頁的PDF轉換爲分頁的SVG。"
+msgstr "将多页的PDF转换为分页的SVG。"
+
+#: ../../workflow.rst:69 ../../workflow.rst:111 ../../workflow.rst:158
+#: ../../workflow.rst:202
+msgid "它們的詳細講解在 :doc:`algorithm` 中。"
+msgstr "它们的详细讲解在 :doc:`algorithm` 中。"
+
+#: ../../workflow.rst:73
+msgid "轉換爲PNG之流程"
+msgstr "转换为PNG之流程"
+
+#: ../../workflow.rst:75
+msgid "轉換爲PNG之流程可用如下之流程圖表示："
+msgstr "转换为PNG之流程可用如下之流程图表示："
+
+#: ../../workflow.rst:90
+msgid ""
+"如上圖所示，轉換流程將在所在之目錄創建一個名爲 :code:`out_png` 的文件夾單獨存放生成的PNG文件。之後將會調用 "
+":code:`util` 文件夾中的 :code:`pdf_to_png` 腳本來實現轉換。"
+msgstr ""
+"如上图所示，转换流程将在所在之目录创建一个名为 :code:`out_png` 的文件夹单独存放生成的PNG文件。之后将会调用 "
+":code:`util` 文件夹中的 :code:`pdf_to_png` 脚本来实现转换。"
+
+#: ../../workflow.rst:99
+msgid ":code:`pdftocairo`"
+msgstr ":code:`pdftocairo`"
+
+#: ../../workflow.rst:101
+msgid ""
+":code:`pdftocairo` 會自動地把一多頁的PDF自動分割爲多張PNG。故此只需要把輸入文件給它即可（即 "
+":code:`infile`），而不需要設置輸出文件（即 :code:`outfile`）。"
+msgstr ""
+":code:`pdftocairo` 会自动地把一多页的PDF自动分割为多张PNG。故此只需要把输入文件给它即可（即 "
+":code:`infile`），而不需要设置输出文件（即 :code:`outfile`）。"
+
+#: ../../workflow.rst:109
+msgid ":code:`pdf_to_png`"
+msgstr ":code:`pdf_to_png`"
+
+#: ../../workflow.rst:109
+msgid "將多頁的PDF轉換爲分頁的PNG。"
+msgstr "将多页的PDF转换为分页的PNG。"
+
+#: ../../workflow.rst:115
+msgid "轉換爲EMF之流程"
+msgstr "转换为EMF之流程"
+
+#: ../../workflow.rst:117
+msgid "轉換爲EMF之流程可用如下之流程圖表示："
+msgstr "转换为EMF之流程可用如下之流程图表示："
+
+#: ../../workflow.rst:132
+msgid ""
+"如上圖所示，轉換流程將在所在之目錄創建一個名爲 :code:`out_emf` 的文件夾單獨存放生成的EMF文件。之後將會調用 "
+":code:`util` 文件夾中的 :code:`gs_split_pdf` 來對生成的PDF進行分頁，:code:`pdf_to_emf` "
+"腳本來實現轉換。 轉換完畢後會刪除所有單頁之PDF，只保留EMF。"
+msgstr ""
+"如上图所示，转换流程将在所在之目录创建一个名为 :code:`out_emf` 的文件夹单独存放生成的EMF文件。之后将会调用 "
+":code:`util` 文件夹中的 :code:`gs_split_pdf` 来对生成的PDF进行分页，:code:`pdf_to_emf` "
+"脚本来实现转换。 转换完毕后会删除所有单页之PDF，只保留EMF。"
+
+#: ../../workflow.rst:141
+msgid ":code:`inkscape`"
+msgstr ":code:`inkscape`"
+
+#: ../../workflow.rst:143
+msgid ""
+":code:`inkscape` 在轉換時不會自動對PDF進行分頁。若直接使用 :code:`inkscape` "
+"對多頁PDF進行轉換，只有第一頁會被轉換。"
+msgstr ""
+":code:`inkscape` 在转换时不会自动对PDF进行分页。若直接使用 :code:`inkscape` "
+"对多页PDF进行转换，只有第一页会被转换。"
+
+#: ../../workflow.rst:145
+msgid ""
+"故此，本方法會先調用 :code:`ghostscript` 對PDF進行分頁，然後在調用 :code:`inkscape` "
+"對所有的單頁PDF進行轉換。"
+msgstr ""
+"故此，本方法会先调用 :code:`ghostscript` 对PDF进行分页，然后在调用 :code:`inkscape` "
+"对所有的单页PDF进行转换。"
+
+#: ../../workflow.rst:147 ../../workflow.rst:190
+msgid "本方法用到以下三份腳本："
+msgstr "本方法用到以下三份脚本："
+
+#: ../../workflow.rst:153 ../../workflow.rst:196
+msgid ":code:`gs_split_pdf`"
+msgstr ":code:`gs_split_pdf`"
+
+#: ../../workflow.rst:153 ../../workflow.rst:196
+msgid "將多頁的PDF分割爲單頁的PDF。"
+msgstr "将多页的PDF分割为单页的PDF。"
+
+#: ../../workflow.rst:156
+msgid ":code:`pdf_to_emf`"
+msgstr ":code:`pdf_to_emf`"
+
+#: ../../workflow.rst:156
+msgid "將PDF轉換爲EMF（僅一頁）。"
+msgstr "将PDF转换为EMF（仅一页）。"
+
+#: ../../workflow.rst:162
+msgid "轉換爲EPS之流程"
+msgstr "转换为EPS之流程"
+
+#: ../../workflow.rst:164
+msgid "轉換爲EPS之流程可用如下之流程圖表示："
+msgstr "转换为EPS之流程可用如下之流程图表示："
+
+#: ../../workflow.rst:179
+msgid ""
+"如上圖所示，轉換流程將在所在之目錄創建一個名爲 :code:`out_eps` 的文件夾單獨存放生成的EMF文件。之後將會調用 "
+":code:`util` 文件夾中的 :code:`gs_split_pdf` 來對生成的PDF進行分頁，:code:`pdf_to_eps` "
+"腳本來實現轉換。 轉換完畢後會刪除所有單頁之PDF，只保留EMF。"
+msgstr ""
+"如上图所示，转换流程将在所在之目录创建一个名为 :code:`out_eps` 的文件夹单独存放生成的EMF文件。之后将会调用 "
+":code:`util` 文件夹中的 :code:`gs_split_pdf` 来对生成的PDF进行分页，:code:`pdf_to_eps` "
+"脚本来实现转换。 转换完毕后会删除所有单页之PDF，只保留EMF。"
+
+#: ../../workflow.rst:188
+msgid "本方法之原理於轉換爲EMF的流程完全一樣。都是先對生成的PDF進行分頁，再調用 :code:`inkscape` 進行處理。"
+msgstr "本方法之原理于转换为EMF的流程完全一样。都是先对生成的PDF进行分页，再调用 :code:`inkscape` 进行处理。"
+
+#: ../../workflow.rst:200
+msgid ":code:`pdf_to_eps`"
+msgstr ":code:`pdf_to_eps`"
+
+#: ../../workflow.rst:199
+msgid "將PDF轉換爲EPS（僅一頁）。"
+msgstr "将PDF转换为EPS（仅一页）。"
+

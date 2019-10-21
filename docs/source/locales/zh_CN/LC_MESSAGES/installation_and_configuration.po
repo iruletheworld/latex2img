@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, 高斯羽 博士 (Dr. Gāo, SīYǔ)
+# This file is distributed under the same license as the LaTex
+# (tikz)转换为图像/LaTex (tikz)轉換爲圖像/LaTex (tikz) to Images package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LaTex (tikz)转换为图像/LaTex (tikz)轉換爲圖像/LaTex (tikz) to "
+"Images \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-21 00:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../installation_and_configuration.rst:2
+msgid "軟件的安裝和配置"
+msgstr "软件的安装和配置"
+
+#: ../../installation_and_configuration.rst:4
+msgid "軟件的下載鏈接可在 :doc:`system_and_software` 獲得。若鏈接失效，請自行搜索。"
+msgstr "软件的下载链接可在 :doc:`system_and_software` 获得。若链接失效，请自行搜索。"
+
+#: ../../installation_and_configuration.rst:6
+msgid ":code:`texlive` 的安裝過程比較長，請耐心等待（根據網速而定，可能需要數十分鐘到數小時不等）。"
+msgstr ":code:`texlive` 的安装过程比较长，请耐心等待（根据网速而定，可能需要数十分钟到数小时不等）。"
+
+#: ../../installation_and_configuration.rst:8
+msgid ":code:`texlive` 自帶 :code:`standalone` 包和 :code:`pdftocairo`"
+msgstr ":code:`texlive` 自带 :code:`standalone` 包和 :code:`pdftocairo`"
+
+#: ../../installation_and_configuration.rst:10
+msgid ":code:`inkscape` 和 :code:`ghostscript` 可採用默認安裝或者改變一下安裝路徑（非C盤）"
+msgstr ":code:`inkscape` 和 :code:`ghostscript` 可采用默认安装或者改变一下安装路径（非C盘）"
+
+#: ../../installation_and_configuration.rst:12
+msgid ""
+"關於 :code:`pdf2svg` "
+"，請在github頁面下載zip壓縮包，然後解壓出對應系統位元的版本（32位或64位）。之後把解壓出來的文件夾路徑加到系統的環境變量 "
+":code:`Path` 中即可。"
+msgstr ""
+"关于 :code:`pdf2svg` "
+"，请在github页面下载zip压缩包，然后解压出对应系统位元的版本（32位或64位）。之后把解压出来的文件夹路径加到系统的环境变量 "
+":code:`Path` 中即可。"
+
+#: ../../installation_and_configuration.rst:14
+msgid ""
+"請保證所有軟件的路徑都加到系統環境變量 :code:`Path` 中，否則Windows的CMD會無法找到它們（除非用完整路徑）。此點會在 "
+":ref:`environ_path` 詳述。"
+msgstr ""
+"请保证所有软件的路径都加到系统环境变量 :code:`Path` 中，否则Windows的CMD会无法找到它们（除非用完整路径）。此点会在 "
+":ref:`environ_path` 详述。"
+
+#: ../../installation_and_configuration.rst:20
+msgid "配置系統環境變量 :code:`Path`"
+msgstr "配置系统环境变量 :code:`Path`"
+
+#: ../../installation_and_configuration.rst:22
+msgid ""
+"當在CMD中鍵入非完整路徑時，譬如調用 :code:`pdftocairo` "
+"時，只鍵入“pdftocairo”而不是它完整的安裝路徑時（譬如“c:\\\\一些文件夾\\\\pdftocairo.exe”），系統會查找保存在"
+" :code:`Path` 變量中的路徑，看能不能找到。故此，爲了便利和兼容，一般情況下軟件安裝時都會把自身重要的路徑加到 "
+":code:`Path` 中。"
+msgstr ""
+"当在CMD中键入非完整路径时，譬如调用 :code:`pdftocairo` "
+"时，只键入“pdftocairo”而不是它完整的安装路径时（譬如“c:\\\\一些文件夹\\\\pdftocairo.exe”），系统会查找保存在"
+" :code:`Path` 变量中的路径，看能不能找到。故此，为了便利和兼容，一般情况下软件安装时都会把自身重要的路径加到 "
+":code:`Path` 中。"
+
+#: ../../installation_and_configuration.rst:24
+msgid ""
+"當然，也有列外的情況，比如不用安裝的軟件（譬如 :code:`pdf2svg` ），或者用戶沒有修改環境變量的權限。這些情況下就需要手動把路徑加到"
+" :code:`Path` 中。權限不足的用戶需要管理員的幫助，或者進行提權。"
+msgstr ""
+"当然，也有列外的情况，比如不用安装的软件（譬如 :code:`pdf2svg` ），或者用户没有修改环境变量的权限。这些情况下就需要手动把路径加到"
+" :code:`Path` 中。权限不足的用户需要管理员的帮助，或者进行提权。"
+
+#: ../../installation_and_configuration.rst:26
+msgid ""
+"在Windows上配置環境變量有好幾種方法，此處描述基於Windows 7的一種方法。Windows "
+"10的方法基本一樣，只不過微軟把界面做了一些優化。"
+msgstr ""
+"在Windows上配置环境变量有好几种方法，此处描述基于Windows 7的一种方法。Windows "
+"10的方法基本一样，只不过微软把界面做了一些优化。"
+
+#: ../../installation_and_configuration.rst:30
+msgid "注意，在改動環境變量時請先進行備份。"
+msgstr "注意，在改动环境变量时请先进行备份。"
+
+#: ../../installation_and_configuration.rst:32
+msgid "步驟如下。"
+msgstr "步骤如下。"
+
+#: ../../installation_and_configuration.rst:34
+msgid "打開系統的控制面板"
+msgstr "打开系统的控制面板"
+
+#: ../../installation_and_configuration.rst:35
+msgid "點擊右上角的查看方式並設爲大圖標"
+msgstr "点击右上角的查看方式并设为大图标"
+
+#: ../../installation_and_configuration.rst:36
+msgid "點擊“系統”"
+msgstr "点击“系统”"
+
+#: ../../installation_and_configuration.rst:37
+msgid "點擊“高級系統設置”"
+msgstr "点击“高级系统设置”"
+
+#: ../../installation_and_configuration.rst:38
+msgid "點擊“環境變量”"
+msgstr "点击“环境变量”"
+
+#: ../../installation_and_configuration.rst:39
+msgid "選中“系統環境變量”下的 :code:`Path`"
+msgstr "选中“系统环境变量”下的 :code:`Path`"
+
+#: ../../installation_and_configuration.rst:40
+msgid "點擊“編輯”"
+msgstr "点击“编辑”"
+
+#: ../../installation_and_configuration.rst:41
+msgid "在彈出的窗口中，複製所有路徑並保存到用以備份用的純文本文件"
+msgstr "在弹出的窗口中，复制所有路径并保存到用以备份用的纯文本文件"
+
+#: ../../installation_and_configuration.rst:42
+msgid ""
+"在彈出窗口的路徑結尾，鍵入分號“;”（英文的），之後粘貼入需要加入的文件夾路徑（不要把文件的完整路徑加進去）（Windows "
+"10有友好的GUI，不需要鍵入分號）"
+msgstr ""
+"在弹出窗口的路径结尾，键入分号“;”（英文的），之后粘贴入需要加入的文件夹路径（不要把文件的完整路径加进去）（Windows "
+"10有友好的GUI，不需要键入分号）"
+
+#: ../../installation_and_configuration.rst:43
+msgid "點擊所有確認鍵"
+msgstr "点击所有确认键"
+
+#: ../../installation_and_configuration.rst:46
+msgid "測試是否成功修改"
+msgstr "测试是否成功修改"
+
+#: ../../installation_and_configuration.rst:48
+msgid "假設加入的是 :code:`pdftocairo` 的路徑，那麼，打開Windows的CMD，鍵入如下命令："
+msgstr "假设加入的是 :code:`pdftocairo` 的路径，那么，打开Windows的CMD，键入如下命令："
+
+#: ../../installation_and_configuration.rst:54
+msgid ""
+"如果配置 :code:`Path` 成功，那一系列的幫助信息將會顯示在CMD裏面。如果不成功，那CMD會說找不到 "
+":code:`pdftocairo` 。"
+msgstr ""
+"如果配置 :code:`Path` 成功，那一系列的帮助信息将会显示在CMD里面。如果不成功，那CMD会说找不到 "
+":code:`pdftocairo` 。"
+
+#: ../../installation_and_configuration.rst:56
+msgid "可能需要重啓電腦"
+msgstr "可能需要重启电脑"
+
+#: ../../installation_and_configuration.rst:58
+msgid "你可能需要重啓電腦才能令環境變量生效。若重啓後仍沒有生效，則證明配置錯誤。"
+msgstr "你可能需要重启电脑才能令环境变量生效。若重启后仍没有生效，则证明配置错误。"
+
+#: ../../installation_and_configuration.rst:60
+msgid ""
+"一般來說， :code:`texlive` 會自動添加路徑，但 :code:`inkscape` ， :code:`ghostscript` 和 "
+":code:`pdf2svg` 都需要手動添加路徑。"
+msgstr ""
+"一般来说， :code:`texlive` 会自动添加路径，但 :code:`inkscape` ， :code:`ghostscript` 和 "
+":code:`pdf2svg` 都需要手动添加路径。"

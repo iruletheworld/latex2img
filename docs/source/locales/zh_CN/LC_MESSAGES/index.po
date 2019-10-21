@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, 高斯羽 博士 (Dr. Gāo, SīYǔ)
+# This file is distributed under the same license as the LaTex
+# (tikz)转换为图像/LaTex (tikz)轉換爲圖像/LaTex (tikz) to Images package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LaTex (tikz)转换为图像/LaTex (tikz)轉換爲圖像/LaTex (tikz) to "
+"Images \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-21 00:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../index.rst:8
+msgid "LaTex (tikz)轉換爲圖像"
+msgstr "LaTex (tikz)转换为图像"
+
+#: ../../index.rst:12
+msgid "\\newline"
+msgstr "\\newline"
+
+#: ../../index.rst:14
+msgid "此項目是一個關於把LaTex文檔直接轉換爲各種圖像的教程（在編譯TEX文件時，同時生成單獨的圖片）。此教程主要關注如何把tikz生成的，內嵌於LaTex生成的PDF文件中的圖像轉換爲各種格式的單獨圖片。"
+msgstr "此项目是一个关于把LaTex文档直接转换为各种图像的教程（在编译TEX文件时，同时生成单独的图片）。此教程主要关注如何把tikz生成的，内嵌于LaTex生成的PDF文件中的图像转换为各种格式的单独图片。"
+
+#: ../../index.rst:16
+msgid "此項目會討論到的圖片格式如下"
+msgstr "此项目会讨论到的图片格式如下"
+
+#: ../../index.rst:18
+msgid "SVG （矢量圖）"
+msgstr "SVG （矢量图）"
+
+#: ../../index.rst:19
+msgid "PNG（位圖）"
+msgstr "PNG（位图）"
+
+#: ../../index.rst:20
+msgid "EMF （Windows系統上的矢量圖）"
+msgstr "EMF （Windows系统上的矢量图）"
+
+#: ../../index.rst:21
+msgid "EPS （印刷常用格式）"
+msgstr "EPS （印刷常用格式）"
+
+#: ../../index.rst:23
+msgid "此項目的在於提供基於Windows系統的教程和例子。作者相信Linux用戶有能力獨自解決這個問題。"
+msgstr "此项目的在于提供基于Windows系统的教程和例子。作者相信Linux用户有能力独自解决这个问题。"
+
+#: ../../index.rst:25
+msgid "此教程會提供軟件安裝和配置指南，並會結合例子進行講解。"
+msgstr "此教程会提供软件安装和配置指南，并会结合例子进行讲解。"
+
+#: ../../index.rst:27
+msgid "此教程認爲用戶已經對LaTex有一定的理解，因而不會對LaTex中之各種進行詳解。"
+msgstr "此教程认为用户已经对LaTex有一定的理解，因而不会对LaTex中之各种进行详解。"
+
+#: ../../index.rst:29
+msgid ""
+"本教程將會詳盡講解流程。若只想快速使用而不在乎原理，可先閱讀 :doc:`/installation_and_configuration` "
+"然後按照 :doc:`/accelerated_guide` 中之步驟執行即可。"
+msgstr ""
+"本教程将会详尽讲解流程。若只想快速使用而不在乎原理，可先阅读 :doc:`/installation_and_configuration` "
+"然后按照 :doc:`/accelerated_guide` 中之步骤执行即可。"
+
+#: ../../index.rst:31
+msgid "目錄"
+msgstr "目录"
+
