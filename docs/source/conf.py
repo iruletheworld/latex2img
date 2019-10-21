@@ -75,7 +75,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_static_path = ['_static']
 
 # -- Options for LaTeX output ------------------------------------------------
-latex_engine = 'xelatex'
+latex_engine = 'pdflatex'
 latex_use_xindy = False
 # latex_docclass = {
 #    'manual': 'ctexbook',
