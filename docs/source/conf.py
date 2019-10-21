@@ -94,14 +94,15 @@ latex_elements = {
     #
     'preamble': r'''
 
-    % \usepackage[UTF8]{ctex}
+    \usepackage[UTF8]{ctex}
+    \usepackage[T1]{fontenc}
 
     \usepackage{float}
 
-    \usepackage{xeCJK}
+    %\usepackage{xeCJK}
 
     %\setCJKmainfont{Songti TC}
-    \setCJKmainfont{Source Han Serif TC}
+    % \setCJKmainfont{Source Han Serif TC}
     % \setCJKsansfont{Source Han Sans Bold Bold}
 
     \usepackage{graphicx}
