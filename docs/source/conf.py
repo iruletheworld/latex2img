@@ -100,7 +100,7 @@ latex_elements = {
 
     \usepackage{xeCJK}
 
-    \setCJKmainfont{bsmi}
+    \setCJKmainfont{Songti TC}
     % \setCJKmainfont{Source Han Serif TC}
     % \setCJKsansfont{Source Han Sans Bold Bold}
 
