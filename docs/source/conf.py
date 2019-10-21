@@ -99,8 +99,8 @@ latex_elements = {
     \usepackage{float}
 
     \usepackage{xeCJK}
-    \setCJKmainfont{Source Han Serif TC}
-    \setCJKsansfont{Source Han Sans Bold Bold}
+    % \setCJKmainfont{Source Han Serif TC}
+    % \setCJKsansfont{Source Han Sans Bold Bold}
 
     \usepackage{graphicx}
 
