@@ -98,7 +98,9 @@ latex_elements = {
 
     \usepackage{float}
 
-    \usepackage{xeCJK}
+    % \usepackage{xeCJK}
+
+    % \setCJKmainfont{bsmi}
     % \setCJKmainfont{Source Han Serif TC}
     % \setCJKsansfont{Source Han Sans Bold Bold}
 
