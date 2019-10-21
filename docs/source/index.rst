@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 ======================
-LaTex (tikz)轉換爲圖像
+LaTex (tikz) 轉換爲圖像
 ======================
 
 .. raw:: latex
