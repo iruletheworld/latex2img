@@ -14,3 +14,4 @@ docs/make.bat
 docs/source/_build/
 !docs/source/_images/*.svg
 !docs/source/_images/*.png
+!remote_build_pdf_issues/latex2img_local_build.pdf
