@@ -77,33 +77,18 @@ html_static_path = ['_static']
 # -- Options for LaTeX output ------------------------------------------------
 latex_engine = 'xelatex'
 latex_use_xindy = False
-# latex_docclass = {
-#    'manual': 'ctexbook',
-# }
 
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
+
     'papersize': 'a4paper',
 
-    # The font size ('10pt', '11pt' or '12pt').
-    #
     'pointsize': '10pt',
 
-    # Additional stuff for the LaTeX preamble.
-    #
     'preamble': r'''
 
-    %\usepackage[UTF8]{ctex}
-    %\usepackage[UTF8]{fontenc}
+    \usepackage[UTF8]{ctex}
 
     \usepackage{float}
-
-    \usepackage{xeCJK}
-
-    %\setCJKmainfont{MSJH}
-    \setCJKmainfont{SimSun}
-    % \setCJKsansfont{Source Han Sans Bold Bold}
 
     \usepackage{graphicx}
 
@@ -112,13 +97,6 @@ latex_elements = {
 
     ''',
 
-    # \setCJKmainfont{Microsoft YaHei}
-
-
-    # 'fontpkg': '\\usepackage{lmodern}',
-
-    # LaTex figure (float) alignment
-    #
     'figure_align': 'H',
 }
 
