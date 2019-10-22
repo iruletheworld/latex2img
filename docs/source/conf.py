@@ -102,7 +102,7 @@ latex_elements = {
     \usepackage{xeCJK}
 
     %\setCJKmainfont{MSJH}
-    \setCJKmainfont{Noto Serif CJK TC}
+    \setCJKmainfont{SimSun}
     % \setCJKsansfont{Source Han Sans Bold Bold}
 
     \usepackage{graphicx}
