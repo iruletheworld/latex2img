@@ -93,7 +93,7 @@ latex_elements = {
     'preamble': r'''
 
     \usepackage{ctex}
-    \ctexset{fontset = ubuntu}
+    \ctexset{fontset = founder}
 
     \usepackage{float}
 
