@@ -93,8 +93,8 @@ latex_elements = {
     'preamble': r'''
 
     \usepackage{ctex}
-    %\ctexset{fontset = ubuntu}
-    \setCJKmainfont{Droid Sans Fallback}
+    \setCJKmainfont{Noto Serif CJK TC}
+    \setCJKsansfont{Noto Sans CJK TC}
 
     \usepackage{float}
 
