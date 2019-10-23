@@ -87,7 +87,8 @@ latex_elements = {
     'preamble': r'''
 
     \usepackage{xeCJK}
-    \setCJKmainfont{AR PL KaitiM Big5}
+    % 'AR PL KaitiM Big5' can be used, but turns every main into 楷体, which is the italic equivalent
+    \setCJKmainfont{AR PL Mingti2L Big5}
     \setCJKsansfont{Droid Sans Fallback}
 
     \usepackage{float}
