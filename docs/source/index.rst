@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-======================
+=======================
 LaTex (tikz) 轉換爲圖像
-======================
+=======================
 
 .. raw:: latex
 
