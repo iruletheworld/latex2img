@@ -78,9 +78,9 @@ html_static_path = ['_static']
 latex_engine = 'xelatex'
 latex_use_xindy = False
 
-latex_docclass = {
-   'manual': 'ctexbook'
-}
+# latex_docclass = {
+#    'manual': 'ctexbook'
+# }
 
 latex_elements = {
 
@@ -88,12 +88,12 @@ latex_elements = {
 
     'pointsize': '10pt',
 
-    'extraclassoptions': r'fontset = none',
+    # 'extraclassoptions': r'fontset = none',
 
     'preamble': r'''
 
-    \usepackage{ctex}
-    \ctexset{fontset = ubuntu}
+    \usepackage[UTF8]{ctex}
+    %\ctexset{fontset = ubuntu}
 
     \usepackage{float}
 
