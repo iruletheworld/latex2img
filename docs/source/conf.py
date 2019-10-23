@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = u'LaTex (tikz) 轉換爲圖像'
+project = u'LaTex (tikz) 轉換為圖像'
 copyright = u'2019, 高斯羽 博士 (Dr. Gāo, SīYǔ)'
 author = u'高斯羽 博士 (Dr. Gāo, SīYǔ)'
 
@@ -105,7 +105,7 @@ latex_elements = {
 latex_documents = [
     (master_doc,
      'latex2img.tex',
-     (u'LaTex (tikz) 轉換爲圖像'),
+     (u'LaTex (tikz) 轉換為圖像'),
      u'高斯羽\ 博士 (Dr. Gāo, Sī Yǔ)', 'manual'),
 ]
 
