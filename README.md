@@ -22,12 +22,16 @@
 
 此教程认为用户已经对LaTex有一定的理解，因而不会对LaTex中之各种进行详解。
 
+## 分享协议
+
+此项目采用“知识共享许可协议-署名-非商业性使用”（Creative Common Attribution-NonCommercial）进行分享。禁止一切商业应用。禁止在任何平台贩卖。
+
 
 # <a name="cht">LaTex (tikz)轉換爲圖像</a>
 
 此項目的網上文檔在此: https://latex2img.readthedocs.io/zh_TW/latest/
 
-(網上生產PDF版本正在排錯中,用戶如果需要PDF,可以下載本項目,自行生成PDF)
+(網上生產PDF版本排錯差不多完成了)
 
 此項目是一個關於把LaTex文檔直接轉換爲各種圖像的教程（在編譯TEX文件時，同
 時生成單獨的圖像）。此教程主要關注如何把tikz生成的，內嵌於LaTex生成的PDF
@@ -46,6 +50,10 @@
 此教程會提供軟件安裝和配置指南，並會結合例子進行講解。
 
 此教程認爲用戶已經對LaTex有一定的理解，因而不會對LaTex中之各種進行詳解。
+
+## 分享協議
+
+此項目採用“知识共享许可协议-署名-非商业性使用”（Creative Common Attribution-NonCommercial）進行分享。禁止一切商業應用。禁止在任何平臺販賣。
 
 
 # <a name="en">LaTex (tikz) to Images</a>
@@ -73,3 +81,7 @@ configurations. This tutorial would illustrate via examples.
 
 This tutorial assumes that the users already have certain degree of
 understanding for LaTex and thus would not discuss LaTex in details.
+
+## Licence
+
+This project is shared under Creative Common Attribution-NonCommercial. No commerical use is allowed. You must not sell any of this project's content on any platform.
