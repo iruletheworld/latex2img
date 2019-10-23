@@ -94,7 +94,7 @@ latex_elements = {
 
     \usepackage{ctex}
     \setCJKmainfont{Noto Serif CJK TC}
-    \setCJKsansfont{Noto Sans CJK TC}
+    %\setCJKsansfont{Noto Sans CJK TC}
 
     \usepackage{float}
 
