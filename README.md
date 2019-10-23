@@ -2,6 +2,8 @@
 
 # <a name="chs">LaTex (tikz)转换为图像</a>
 
+此项目的网上文档在此: https://latex2img.readthedocs.io/zh_CN/latest/
+
 此项目是一个关于把LaTex文档直接转换为各种图像的教程（在编译TEX文件时，同
 时生成单独的图像）。此教程主要关注如何把tikz生成的，内嵌于LaTex生成的PDF
 文件中的图像转换为各种格式的单独图片。
@@ -22,6 +24,10 @@
 
 
 # <a name="cht">LaTex (tikz)轉換爲圖像</a>
+
+此項目的網上文檔在此: https://latex2img.readthedocs.io/zh_TW/latest/
+
+(網上生產PDF版本正在排錯中,用戶如果需要PDF,可以下載本項目,自行生成PDF)
 
 此項目是一個關於把LaTex文檔直接轉換爲各種圖像的教程（在編譯TEX文件時，同
 時生成單獨的圖像）。此教程主要關注如何把tikz生成的，內嵌於LaTex生成的PDF
