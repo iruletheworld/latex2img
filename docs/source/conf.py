@@ -87,7 +87,8 @@ latex_elements = {
     'preamble': r'''
 
     \usepackage{xeCJK}
-    \setCJKmainfont{Droid Sans Fallback}
+    \setCJKmainfont{AR PL UMing}
+    \setCJKsansfont{Droid Sans Fallback}
 
     \usepackage{float}
 
