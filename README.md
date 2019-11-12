@@ -4,6 +4,8 @@
 
 此项目的网上文档在此: https://latex2img.readthedocs.io/zh_CN/latest/
 
+TODO : 增加一个高级应用的例子吧。直接同时生成SVG和PNG，满足HTML和PDF。虽然Latex现在已经有SVG的包了，但是Sphinx调用比较麻烦，还是PNG方便。写RST的时候通过用 `only` 来实现不同格式的调用。
+
 此项目是一个关于把LaTex文档直接转换为各种图像的教程（在编译TEX文件时，同
 时生成单独的图像）。此教程主要关注如何把tikz生成的，内嵌于LaTex生成的PDF
 文件中的图像转换为各种格式的单独图片。
@@ -57,6 +59,8 @@
 
 
 # <a name="en">LaTex (tikz) to Images</a>
+
+(The English documentation is under translation.)
 
 This project is a tutorial about how to perform converting LaTex
 documents directly to images (producing individual images while
